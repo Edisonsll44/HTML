@@ -1,0 +1,646 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CanjeAutoHertz</title>
+      <!--[if mso]> <noscript> <xml> <o:OfficeDocumentSettings> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml> </noscript> <![endif]-->
+    <style>
+        @media only screen and (max-width: 600px) {
+          .column,
+          .gutter {
+            display: block !important;
+          }
+   
+          .column {
+            width: 450px !important;
+          }
+   
+          .column img {
+            width: 450px;
+          }
+        }
+        body {
+            font-family:Helvetica;
+        }
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .table-module {
+            width:700px;
+            border:0;
+            padding: 18px 24px;
+            border-collapse:collapse;
+            border-spacing:0;
+            background-color: #FFFFFF !important;
+        }
+       li {
+            font-size: 12px;
+            color: #9B9CA0 !important;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+       }
+      </style>
+</head>
+<body>
+    <table class="table-module">
+        <tr>
+            <td style="display: none !important;">{{var:textHeader:""}}</td>
+        </tr>
+        <tr>
+            <table class="table-module">
+                <tr style="text-align: center;">
+                    <td class="divider" style="height: 10px">&nbsp;</td>
+                </tr>
+                <tr style="text-align: left;">
+                    <td style=" background-image: url('https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/BGR/header/Cabecera-Canje-de-auto-hertz.png');background-repeat: no-repeat;height:265px;width:700px;">
+                        <span style="font-style: normal;font-size: 16px;color: #F7F8FC !important;margin-bottom: 145px;padding-left: 21px;display: inline-block;">
+                            Hola, <strong style="color: #F7F8FC !important;">{{var:username:""}}</strong>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="table-module">
+                <tr>
+                    <td style="padding: 24px 60px 0px 60px;">
+                        <span>
+                            <p style="font-style: normal;font-size: 18px;line-height: 23px;color: #001850 !important; margin: 0px;">
+                                Tu reserva de auto se realizó exitosamente.
+                            </p>
+                            <p style="font-style: normal;font-size: 18px;line-height: 23px;color: #001850 !important;margin: 0px;">
+                                En unos minutos recibirás el voucher de tu reserva.
+                            </p>
+                            <br>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0px 60px 14px 60px;">
+                            <p style="margin: 0px; 
+                                    color: #2DB8C5 !important;
+                                    font-size:18px;
+                                    font-style: normal; 
+                                    font-weight: 700;
+                                    line-height: normal; 
+                                    border-bottom: 1px solid #B7C3FF;">
+                                Detalle de reserva
+                            </p>
+                            <span style="padding: 18px 24px 18px 24px;">
+                                <span>
+                                    <p style="display: inline-block;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: #9B9CA0 !important;
+                                        margin: 32px 0px 0px;">Código de reserva:
+                                    </p>
+                                    <p style="font-size:18px;
+                                        font-style: normal; 
+                                        font-weight: 700;
+                                        color: #001850 !important;
+                                        margin: 0px 24px 6px;">
+                                        {{var:bookingCode:""}}
+                                    </p>
+                                </span>
+                                <span style="padding-left:24px;">
+                                    <p style="display: inline-block;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: #9B9CA0 !important;
+                                        margin: 0px;">Tipo de vehículo:
+                                    </p>
+                                    <p style="font-size:18px;
+                                        font-style: normal; 
+                                        font-weight: 700;
+                                        color: #001850 !important;
+                                        margin: 0px 24px 6px;">
+                                        {{var:carType:""}}
+                                    </p>
+                                </span>
+                                <span style="padding-left:24px;">
+                                    <p style="display: inline-block;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: #9B9CA0 !important;
+                                        margin: 0px;">Modelo:
+                                    </p>
+                                    <p style="font-size:18px;
+                                        font-style: normal; 
+                                        font-weight: 700;
+                                        color: #001850 !important;
+                                        margin: 0px 24px 6px;">
+                                        {{var:carModel:""}}
+                                    </p>
+                                </span>
+                                <span style="padding-left:24px;">
+                                    <p style="display: inline-block;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: #9B9CA0 !important;
+                                        margin: 0px;">Cobertura:
+                                    </p>
+                                    <p style="font-size:18px;
+                                        font-style: normal; 
+                                        font-weight: 700;
+                                        color: #001850 !important;
+                                        margin: 0px 24px 6px;">
+                                        {{var:coverage:""}}
+                                    </p>
+                                </span>
+                                <span style="padding-left:24px;">
+                                    <p style="display: inline-block;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: #9B9CA0 !important;
+                                        margin: 0px;">Rentadora:
+                                    </p>
+                                    <p style="font-size:18px;
+                                        font-style: normal; 
+                                        font-weight: 700;
+                                        color: #001850 !important;
+                                        margin: 0px 24px 6px;">
+                                        {{var:rentalCompany:""}}
+                                    </p>
+                                </span>
+                                <span style="padding-left:24px;">
+                                    <p style="display: inline-block;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: #9B9CA0 !important;
+                                        margin: 0px;">Código rentadora:
+                                    </p>
+                                    <p style="font-size:18px;
+                                        font-style: normal; 
+                                        font-weight: 700;
+                                        color: #001850 !important;
+                                        margin: 0px 24px 6px;">
+                                        {{var:rentalCode:""}}
+                                    </p>
+                                </span>
+                                <span style="padding-left:24px;">
+                                    <p style="display: inline-block;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: #9B9CA0 !important;
+                                        margin: 0px;">Número de voucher:
+                                    </p>
+                                    <p style="font-size:18px;
+                                        font-style: normal; 
+                                        font-weight: 700;
+                                        color: #2DB8C5 !important;
+                                        margin: 0px 24px 6px;">
+                                        {{var:voucherNumber:""}}
+                                    </p>
+                                </span>
+                                <span style="padding-left:24px;">
+                                    <p style="display: inline-block;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: #9B9CA0 !important;
+                                        margin: 0px;">Recogida:
+                                    </p>
+                                    <p style="font-size:18px;
+                                        font-style: normal; 
+                                        font-weight: 700;
+                                        color: #001850 !important;
+                                        margin: 0px 24px 0px;">
+                                        {{var:fechayhora:""}}
+                                    </p>
+                                    <p style="font-size:18px;
+                                        font-style: normal; 
+                                        font-weight: 700;
+                                        color: #001850 !important;
+                                        margin: 0px 24px 0px;">
+                                        {{var:lugar:""}}
+                                    </p>
+                                    <p style="font-size:18px;
+                                        font-style: normal; 
+                                        font-weight: 700;
+                                        color: #001850 !important;
+                                        margin: 0px 24px 6px;">
+                                        {{var:direccion:""}}
+                                    </p>
+                                </span>
+                                <span style="padding-left:24px;">
+                                    <p style="display: inline-block;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: #9B9CA0 !important;
+                                        margin: 0px;">Horario de atención:
+                                    </p>
+                                    <p style="font-size:18px;
+                                        font-style: normal; 
+                                        font-weight: 700;
+                                        color: #001850 !important;
+                                        margin: 0px 24px 6px;">
+                                        {{var:officeHoursPickUp:""}}
+                                    </p>
+                                </span>
+                                <span style="padding-left:24px;">
+                                    <p style="display: inline-block;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: #9B9CA0 !important;
+                                        margin: 0px;">Devolución:
+                                    </p>
+                                    <p style="font-size:18px;
+                                        font-style: normal; 
+                                        font-weight: 700;
+                                        color: #001850 !important;
+                                        margin: 0px 24px 0px;">
+                                        {{var:fechayhora:""}}
+                                    </p>
+                                    <p style="font-size:18px;
+                                        font-style: normal; 
+                                        font-weight: 700;
+                                        color: #001850 !important;
+                                        margin: 0px 24px 0px;">
+                                        {{var:lugar:""}}
+                                    </p>
+                                    <p style="font-size:18px;
+                                        font-style: normal; 
+                                        font-weight: 700;
+                                        color: #001850 !important;
+                                        margin: 0px 24px 6px;">
+                                        {{var:direccion:""}}
+                                    </p>
+                                </span>
+                                <span style="padding-left:24px;">
+                                    <p style="display: inline-block;
+                                            font-size: 18px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            color: #9B9CA0 !important;
+                                            margin: 0px;">
+                                            Horario de atención:
+                                    </p>
+                                    <p style="font-size:18px;
+                                            font-style: normal; 
+                                            font-weight: 700;
+                                            color: #001850 !important;
+                                            margin: 0px 24px 0px;">
+                                            {{var:officeHoursPickUp:""}}
+                                    </p>
+                                </span>
+                            </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0px 60px 14px 60px;">
+                        <span>
+                            <p style="margin: 0px;
+                                    color: #2DB8C5 !important;
+                                    font-size:18px;
+                                    font-style: normal; 
+                                    font-weight: 700;
+                                    line-height: normal; 
+                                    border-bottom: 1px solid #B7C3FF;">
+                                Detalle del conductor
+                            </p>
+                            
+                            <span style="padding: 18px 24px 18px 24px;">
+                                <p style="display: inline-block;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: #9B9CA0 !important;
+                                        margin: 18px 0px 0px;">Nombre:</p>
+                                <p style="font-size:18px;
+                                        font-style: normal; 
+                                        font-weight: 700;
+                                        color: #001850 !important;
+                                        margin: 0px 24px 6px;">
+                                    {{var:userNameDriver:""}}
+                                </p>
+                            </span>
+                            <span style="padding: 18px 24px 18px 0px;">
+                                <p style="display: inline-block;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    color: #9B9CA0 !important;
+                                    margin: 0px;">Documento de identidad:
+                                </p>
+                                <p style="font-size:18px;
+                                    font-style: normal; 
+                                    font-weight: 700;
+                                    color: #001850 !important;
+                                    margin: 0px 24px 6px;">
+                                    {{var:identificationDriver:""}}
+                                </p>
+                            </span>
+                            <span style="padding: 18px 24px 18px 0px;">
+                                <p style="display: inline-block;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: #9B9CA0 !important;
+                                        margin: 0px;">
+                                        Email:
+                                </p>
+                                <p style="font-size:18px;
+                                        font-style: normal; 
+                                        font-weight: 700;
+                                        color: #001850 !important;
+                                        margin: 0px 24px 0px;">
+                                        {{var:emailDriver:""}}
+                                </p>
+                            </span>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 10px 60px 12px 60px;">
+                        <img src ="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/BGR/body/alert-body.png"
+                        style="height: 48px;width: 580px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 18px 60px 18px 60px;">
+                        <a href="https://bgrmiles-ec.developppm.com/mi-cuenta/consulte-su-saldo">
+                            <button style="width: 172px;
+                            height: 48px;
+                            border-radius: 12px;
+                            background:  #001850 !important;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            color:#FFFFFF  !important;
+                            cursor: pointer;">
+                            Descarga PDF
+                            </button>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0px 60px 14px 60px;">
+                        <span>
+                            <p style="margin: 0px; 
+                                      color: #2DB8C5 !important;
+                                      font-size:18px;
+                                      font-style: normal; 
+                                      font-weight: 700;
+                                      line-height: normal; 
+                                      border-bottom: 1px solid #B7C3FF;">
+                                Detalle propietario de las millas
+                            </p>
+                                <span style ="padding: 18px 24px 18px 24px;">
+                                    <p style="display: inline-block;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: #9B9CA0 !important;
+                                        margin: 18px 0px 0px;">Nombres y apellidos:
+                                    </p>
+                                    <p style="font-size:18px;
+                                        font-style: normal; 
+                                        font-weight: 700;
+                                        color: #001850 !important;
+                                        margin: 0px 24px 6px;">
+                                        {{var:userNameOwner:""}}
+                                    </p>
+                                </span>
+                                <span style="padding: 18px 24px 18px 0px;">
+                                    <p style="display: inline-block;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: #9B9CA0 !important;
+                                        margin: 0px;">Documento de identidad:
+                                    </p>
+                                    <p style="font-size:18px;
+                                        font-style: normal; 
+                                        font-weight: 700;
+                                        color: #001850 !important;
+                                        margin: 0px 24px 6px;">
+                                        {{var:identificationOwner:""}}
+                                    </p>
+                                </span>
+                                <span style="padding: 18px 24px 18px 0px;">
+                                    <p style="display: inline-block;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: #9B9CA0 !important;
+                                        margin: 0px;">Email:
+                                    </p>
+                                    <p style="font-size:18px;
+                                        font-style: normal; 
+                                        font-weight: 700;
+                                        color: #001850 !important;
+                                        margin: 0px 24px 6px;">
+                                        {{var:userEmailOwner:""}}
+                                    </p>
+                                </span>
+                                <span style="padding: 18px 24px 18px 0px;">
+                                    <p style="display: inline-block;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: #9B9CA0 !important;
+                                        margin: 0px;">Código de redención:
+                                    </p>
+                                    <p style="font-size:18px;
+                                        font-style: normal; 
+                                        font-weight: 700;
+                                        color: #001850 !important;
+                                        margin: 0px 24px 6px;">
+                                         {{var:redemptionCode:""}}
+                                    </p>
+                                </span>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0px 60px 14px 60px;">
+                        <span>
+                            <p style="margin: 0px; 
+                                      color: #2DB8C5 !important;
+                                      font-size:18px;
+                                      font-style: normal; 
+                                      font-weight: 700;
+                                      line-height: normal; 
+                                      border-bottom: 1px solid #B7C3FF;">
+                                Detalle del pago
+                            </p>
+                            <span padding: 18px 24px 18px 24px;>
+                                <span style="border-radius: 12px;
+                                        background: #FFFFFF !important;
+                                        display: block;
+                                        margin-top: 18px;
+                                        border: 1px solid #B7C3FF;">
+                                    <span style="padding-left:24px;">
+                                        <p style="display: inline-block;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: #9B9CA0 !important;
+                                        margin: 18px 0px 0px;">Millas Canjeadas:</p>
+                                        <p style="font-size:18px;font-style: normal; font-weight: 700;color: #001850 !important;margin: 0px 24px 6px;">
+                                        {{var:pointsAmount:""}}
+                                        </p>
+                                    </span>
+                                    <span style="padding-left:24px;">
+                                        <p style="display: inline-block;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: #9B9CA0 !important;
+                                        margin: 0px;">Otros impuestos:</p>
+                                        <p style="font-size:18px;font-style: normal; font-weight: 700;color: #001850 !important;margin: 0px 24px 6px;">
+                                        {{var:taxes:""}}
+                                        </p>
+                                    </span>
+                                    <span style="padding-left:24px;">
+                                        <p style="display: inline-block;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: #9B9CA0 !important;
+                                        margin: 0px;">Estado de canje:</p>
+                                        <p style="font-size:18px;font-style: normal; font-weight: 700;color: #001850 !important;margin: 0px 24px 6px;">
+                                            {{var:redemptionStatus:""}}
+                                        </p>
+                                    </span>
+                                    <span style="padding-left:24px;">
+                                        <p style="display: inline-block;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        color: #9B9CA0 !important;
+                                        margin: 0px;">Fecha y hora:</p>
+                                        <p style="font-size:18px;font-style: normal; font-weight: 700;color: #001850 !important;margin: 0px 24px 18px;">
+                                            {{var:createdAt:""}}
+                                        </p>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr style="background: #FFFFFF !important;">
+                    <td style="padding: 24px 60px 36px;">
+                        <a href="https://bgrmiles-ec.developppm.com/mi-cuenta/consulte-su-saldo">
+                            <button style="width: 294px;
+                            height: 48px;
+                            border-radius: 12px;
+                            background: #FFFFFF !important;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            color: #001850  !important;
+                            cursor: pointer;">
+                            Revisa el estado de tus millas
+                            </button>
+                        </a>
+                    </td>
+                </tr>
+                <tr style="background: #F7F8FC !important;height: 69px;">
+                    <td style="padding: 24px 60px; font-size: 18px; font-weight: 300;font-style: normal;">
+                        Para más información comunícate al 1700 MILLAS (645527).
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 0px 60px 24px 60px;">
+                    <p>
+                        Términos y condiciones
+                    </p>
+                    <ul style="width: 512px;">
+                        <li>
+                            La emisión y operación del sitio de viajes de BGR Visa Miles es responsabilidad de 
+                            Publipromueve.
+                        </li>
+                        <li>
+                            Los datos personales ingresados para la elaboración de la reserva son responsaiblidad del socio.
+                        </li>
+                        <li>
+                            El socio es responsable de tener la documentación legal necesaria para el ingreso a países o destinos seleccionados, por tanto exime a BGR Visa Miles de cualquier responsabilidad derivada de este hecho.
+                        </li>
+                        <li>
+                            En caso de experiencias internacionales el nombre del cliente en la experiencia deberá ser igual al nombre registrado en el pasaporte.
+                        </li>
+                        <li>
+                            Si necesitas hacer alguna modificación en la reserva, el cambio estará sujeto a las políticas del operador del servicio y a las regulaciones de la tarifa que aplique
+                        </li>
+                    </ul>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="table-module">
+                <tr>
+                    <td style="background-image: url('https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/BGR/footer/footer-help.png');height:125px;">
+                        <p style="font-style: normal;
+                                font-size: 14px;
+                                line-height: 18px;
+                                color: #9B9CA0;
+                                display: inline-block;
+                                padding-top: 55px;
+                                padding-left: 60px;
+                                margin: 0px;
+                                vertical-align: top;">
+                                    Si no eres tú quién ingresó a la cuenta,
+                        </p>
+                        <p style="font-style: normal;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    color: #9B9CA0;
+                                    margin: 0px;
+                                    padding-left: 60px;">
+                                    Comunícate con nuestros asesores al 1700 MILLAS (645527) 
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style=" background-image: url('https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/BGR/footer/footer-info.png');background-repeat: no-repeat;height: 45px;">
+                        <span style="vertical-align: bottom;display: inline-block;margin-left: 30px;margin-top: 5px;">
+                            <a style=" border: 0px solid #000000;border-radius: 36px;" href="https://www.facebook.com/BGRoficial?mibextid=LQQJ4d">
+                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/BGR/footer/fb-bgr.png" style="margin-right: 5px;" alt="facebook">
+                            </a>
+                        
+                            <a style=" border: 0px solid #000000;border-radius: 36px;" href="https://instagram.com/bgr_ecuador?igshid=NTc4MTIwNjQ2YQ==">
+                               <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/BGR/footer/int-bgr.png" style="margin-right: 5px;" alt="instagram">
+                            </a>
+                            
+                            <a style=" border: 0px solid #000000;border-radius: 36px;" href="https://youtube.com/@MERCADEOBGR">
+                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/BGR/footer/ytb-bgr.png" style="margin-right: 5px;" alt="youtube">
+                            </a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style=" background-image: url('https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/BGR/footer/footer-end.png');background-repeat: no-repeat;height: 50px;">
+                            <p style="font-size: 10px;color: #9B9CA0;text-align: center;padding: 0 30px;margin: 0px;">
+                                Si no deseas recibir más información puedes cancelar tu suscripción haciendo click aquí. 
+                            </p>
+                            <p style="font-size: 10px;color: #9B9CA0;text-align: center;padding: 0 30px;margin: 0px;">
+                                Los datos receptados en tu solicitud serán usados únicamente por BGR Visa Miles. 
+                            </p>
+                            <p style="font-size: 10px;color: #9B9CA0;text-align: center;padding: 0 30px;margin: 0px;font-weight: 700;">
+                                © 2023 BGRMILES. Todos los derechos reservados.
+                            </p>
+                    </td>
+                </tr>
+            </table>
+        </tr>
+    </table>
+</body>
+</html>
