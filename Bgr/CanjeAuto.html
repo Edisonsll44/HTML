@@ -44,13 +44,17 @@
             font-weight: 400;
             line-height: normal;
        }
+       .preheader { 
+        display:none !important; 
+        visibility:hidden; 
+        opacity:0; color:transparent; height:0; width:0; }
       </style>
 </head>
 <body>
+    <span style="display: none !important; visibility: hidden; opacity: 0; color: transparent; height: 0; width: 0;">
+        {{var:textHeader:""}}
+    </span>
     <table class="table-module">
-        <tr>
-            <td style="display: none !important;">{{var:textHeader:""}}</td>
-        </tr>
         <tr>
             <table class="table-module">
                 <tr style="text-align: center;">
