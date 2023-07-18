@@ -69,107 +69,131 @@
                 </tr>
             </table>
             
-            <span style="padding-left:131px; background: #FFFF !important;">
-                <p style="margin: 0px 60px 0px 60px;
-                        color: #2DB8C5 !important;
-                        font-size:18px;
-                        font-style: normal; 
-                        font-weight: 700;
-                        line-height: normal; 
-                        border-bottom: 1px solid #B7C3FF;
-                        width: 579px;">Detalle del producto</p>                     
-                <span style="width: 580px;height: 121px;">
-                    <div style="color: #798083 ;  border-radius: 10px;background:#FFFFFF !important;width:700px;">
+            <span style="padding-left:60px; background: #FBFBFB;">
+                <p style="padding-left:60px; 
+                          font-style: normal;
+                          font-weight: 700;
+                          font-size: 18px;
+                          line-height:normal;
+                          color: #2DB8C5 !important;
+                          width: 555px;">
+                    Detalle del producto
+                </p>                     
+                <span>
+                    <div style="color: #798083;  border-radius: 10px;background: #FFFFFF;">
                         {% for product in var:order_lines %}
-                        <div style="border: 2px solid #B7C3FF;
-                                border-radius: 10px;
-                                margin: 5px 0px 0px 60px;
-                                width: 580px;
-                                height: 121px;">
-                            <div>
+                        <div style=" border: 2px solid #B7C3FF;background-color: #FFFFFF !important; border-radius: 10px; margin: 2% 6%;width: 555px;">
+                            <div >
                                 <img src="{{product.image}}" style="width: 111px;
-                                    height: 85px;
-                                    background: url(placeholder-image), #FAFAFA;
-                                    padding: 10px;
-                                    vertical-align: top;
-                                    display: inline-block;
-                                    margin-top: 5px;
-                                    margin-left: 5px;
-                                    filter: brightness(1.1);
-                                    mix-blend-mode: multiply;">
-                                <span style=" display: inline-block;">
-                                    <p style="font-family: Helvetica!important;
-                                        font-size: 20px;
-                                        font-weight: 400;
-                                        line-height: normal;
+                                height: 85px;
+                                background: url(placeholder-image), #FAFAFA;
+                                padding: 10px;
+                                vertical-align: top;
+                                display: inline-block;
+                                margin-top: 5px;
+                                margin-left: 5px;
+                                filter: brightness(1.1);
+                                mix-blend-mode: multiply;">
+                            <span style=" display: inline-block;">
+                                <p style="font-family: Helvetica!important;
+                                    font-size: 20px;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                    text-align: left;
+                                    color: #001850 !important;
+                                    margin: 27px 0px 0px;   
+                                    font-style: normal;">{{product.product_name}}
+                                </p>
+                                <p style="font-family: Helvetica !important;
+                                        font-size: 14px;
+                                        font-style: normal;
                                         text-align: left;
-                                        color: #001850 !important;
-                                        margin: 27px 0px 0px;   
-                                        font-style: normal;">{{product.product_name}}
+                                        color: #9B9CA0 !important;
+                                        margin: 1px 5px 1px 0px !important;"
+                                        font-weight: 300;">
+                                        Cantidad: {{product.quantity}}
+                                </p>
+                                <p style="font-family: Helvetica !important;
+                                        font-size: 14px;
+                                        font-style: normal;
+                                        text-align: left;
+                                        color: #9B9CA0 !important;
+                                        font-weight: 300;
+                                        margin: 1px 5px 1px 0px !important;">
+                                        Millas canjeadas: {{product.points_amount}}
+                                </p>
+                            </span>
+                            </div>
+                        </div>{% endfor %}<br>
+                    </div>
+                </span>
+            </span> 
+
+            <span style="padding-left:60px; background: #FBFBFB;">
+                <p style="padding-left:60px; 
+                          font-style: normal;
+                          font-weight: 700;
+                          font-size: 18px;
+                          line-height:normal;
+                          color: #2DB8C5 !important;
+                          width: 555px;">
+                    Detalle del canje
+                </p>                     
+                <span style=" width: 570px;height: 243px;">
+                    <div style="color: #798083;  border-radius: 10px;background: #FFFFFF;">
+                        <div style=" border: 2px solid #B7C3FF;background-color: #FFFFFF !important;border-radius: 10px; margin: 2% 6%;width: 555px;">
+                            <div style="margin: 0px;">
+                                <div>
+                                    <p style="font-size: 18px; 
+                                              font-style: normal;
+                                              font-weight: 300;
+                                              line-height: normal;
+                                              text-align: left; 
+                                              color: #211F1E !important;  
+                                              margin: 18px 0px 0px 24px;">
+                                                Millas Canjeadas:
+                                        
                                     </p>
-                                    <p style="font-family: Helvetica !important;
-                                            font-size: 14px;
-                                            font-style: normal;
-                                            text-align: left;
-                                            color: #9B9CA0 !important;
-                                            margin: 1px 5px 1px 0px !important;"
-                                            font-weight: 300;">
-                                            Cantidad: {{product.quantity}}
+                                    <p style="font-size: 18px; 
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: normal;
+                                        text-align: left; 
+                                        color: #211F1E !important;  
+                                        margin: 0px 0px 18px 24px;;">
+                                        {{var:total_points_amount:""}}
                                     </p>
-                                    <p style="font-family: Helvetica !important;
-                                            font-size: 14px;
-                                            font-style: normal;
-                                            text-align: left;
-                                            color: #9B9CA0 !important;
-                                            font-weight: 300;
-                                            margin: 1px 5px 1px 0px !important;">
-                                            Millas canjeadas: {{product.points_amount}}
-                                    </p>
-                                </span>
+                                </div>
                             </div>
                         </div>
-                        <br>
-                    </div>{% endfor %}<br>
+                    </div>
                 </span>
             </span>
 
             <table class="table-module">
+                
                 <tr>
-                    <td style="padding: 0px 60px 14px 60px;">
-                        <span>
-                            <p style="margin: 0px; 
-                                      color: #2DB8C5 !important;
-                                      font-size:18px;
-                                      font-style: normal; 
-                                      font-weight: 700;
-                                      line-height: normal; 
-                                      border-bottom: 1px solid #B7C3FF;">
-                                Detalle del canje
-                            </p>
-                            
-                                <span style="border-radius: 12px;
-                                        background: #FFFFFF !important;
-                                        display: block;
-                                        margin-top: 18px;
-                                        border: 1px solid #B7C3FF;">
-                                    <span style="padding: 18px 24px 18px 24px;">
-                                        <p style="display: inline-block;
-                                        font-size: 18px;
-                                        font-style: normal;
-                                        font-weight: 400;
-                                        color: #9B9CA0 !important;
-                                        margin: 18px 0px 0px;">Millas Canjeadas:</p>
-                                        <p style="font-size:18px;font-style: normal; font-weight: 700;color: #001850 !important;margin: 0px 24px 6px;">
-                                            {{var:total_points_amount:""}}
-                                        </p>
-                                    </span>
-                                </span>
-                        </span>
+                    <td>
+                        <p style="font-style: normal;
+                            font-size: 12px;
+                            line-height:normal;
+                            font-weight: 400;
+                            color: #001850 !important;
+                            padding-left: 60px;
+                            margin: 0px;">
+                        Términos y condiciones
+                        </p>
+                        <ul style="padding-left: 80px;
+                                margin: 0px 0px 24px;">
+                            <li style="font-style: normal;
+                                font-size: 12px;
+                                line-height:normal;
+                                font-weight: 300;
+                                color: #9B9CA0 !important;">Los productos serán entregados en máximo 15 días laborables
+                            </li>
+                        </ul>
                     </td>
                 </tr>
-            </table>
-
-            <table class="table-module">
                 <tr>
                     <td style="background-image: url('https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/BGR/footer/footer-help.png');height:125px; width: 700px;">
                         <p style="font-style: normal;
@@ -211,18 +235,18 @@
                     </td>
                 </tr>
                 <tr>
-                    <td style=" background-image: url('https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/BGR/footer/footer-end.png');background-repeat: no-repeat;height: 50px;">
+                    <td style=" background-image: url('https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/BGR/footer/footer-end.png');background-repeat: no-repeat;height: 70px;"> 
                             <p style="font-size: 10px;color: #9B9CA0;text-align: center;padding: 0 30px;margin: 0px;">
-                                Si no deseas recibir más información puedes cancelar tu suscripción haciendo 
-                                    <a href="https://bgrmiles-ec.developppm.com/terminos-condiciones-del-programa" 
-                                            style="text-decoration: revert;color: #9B9CA0 !important;">click aquí.
-                                    </a>  
+                                    Si no deseas recibir más información puedes cancelar tu suscripción haciendo 
+                                        <a href="https://bgrmiles-ec.developppm.com/terminos-condiciones-del-programa" 
+                                                style="text-decoration: revert;color: #9B9CA0 !important;">click aquí.
+                                        </a>  
                             </p>
                             <p style="font-size: 10px;color: #9B9CA0;text-align: center;padding: 0 30px;margin: 0px;">
-                                Los datos receptados en tu solicitud serán usados únicamente por BGR Visa Miles. 
+                                    Los datos receptados en tu solicitud serán usados únicamente por BGR Visa Miles. 
                             </p>
                             <p style="font-size: 10px;color: #9B9CA0;text-align: center;padding: 0 30px;margin: 0px;font-weight: 700;">
-                                © 2023 BGRMILES. Todos los derechos reservados.
+                                    © 2023 BGRMILES. Todos los derechos reservados.
                             </p>
                     </td>
                 </tr>
