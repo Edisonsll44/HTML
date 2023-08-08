@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CambioClave</title>
+    <title>TransferenciaMillas</title>
       <!--[if mso]> <noscript> <xml> <o:OfficeDocumentSettings> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml> </noscript> <![endif]-->
     <style>
         @media only screen and (max-width: 480px) {
@@ -12,6 +12,10 @@
                 width: 100% !important;
                 margin: 0 auto !important;
                 padding: 0px;
+            }
+
+            .table-module {
+                width:100% !important;
             }
 
            td {
@@ -33,8 +37,7 @@
            }
 
            #label-title {
-                font-size: 20px !important;
-                width: 66% !important;
+                font-size: 18px !important;
            }
 
            #wrapper-img-title{
@@ -46,15 +49,15 @@
                 width: 25% !important;
            }
            #td-wrapper-label-title {
-                width: 70% !important;
+                width: 73% !important;
            }
 
            #td-img-footer{
-            width: 20% !important;
+            width: 30% !important;
            }
 
            #td-label-footer {
-            width: 78% !important;
+            width: 66% !important;
            }
            #img-footer {
                 margin: 24px 0px 0px 24px !important;
@@ -106,25 +109,38 @@
                 width: 100% !important;
            }
 
-           #text-body {
-                margin: 30px 24px 0px 24px !important;
-           }
-
            .elemnts-body {
-                margin: 0px 24px 0px 24px !important;
+                
+                padding-left: 12px !important;
+           }
+           .p-body-title {
                 font-size: 16px !important;
            }
+           .p-body-subtitle {
+                font-size: 14px !important;
+                margin: 0px;
+           }
 
-           .table-module {
-                width:100% !important;
-            }
+           .btn-body {
+                margin: 0px 60px !important;
+           }
 
-            .table-full-width {
-                width: 100% !important;
+           .btn-text-body {
+                font-size: 15px !important;
+                margin: 2px 0px 0px 0px;
+           }
+
+           .td-space-header {
+                height: 42px !important;
+           }
+
+           .container-body-table {
+                width: 330px !important;
            }
         }
+
         body {
-            font-family: Helvetica;
+            font-family:Helvetica;
             width: 700px;
             margin: 0 auto;
             padding: 0px;
@@ -141,6 +157,8 @@
             border-spacing:0;
             background: #FFFF !important;
         }
+       
+      </style>
       </style>
       
 </head>
@@ -157,7 +175,7 @@
                     </td>
                     <td></td>
                     <td style="width: 138px;">
-                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/Campana.png" alt="campana" style="width: 36px;height: 36px;    margin: 0px 36px 0px 76px;">
+                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/IconTarjeta.png" alt="campana" style="width: 36px;height: 36px;    margin: 0px 36px 0px 76px;">
                     </td>
                 </tr>
                 <tr style="height: 162px;background-color: #F8F7F7 !important;">
@@ -192,22 +210,20 @@
                                              height: 48px;
                                              width: 48px;
                                              display: inline-block;">
-                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/Check.png" alt="logo" style="height: 48px;width: 48px;">
+                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/IconDineroVerde.png" alt="logo" style="height: 48px;width: 48px;">
                                     </span>
                                 </td>
                                 <td id="td-wrapper-label-title" style="height: 48px;
-                                                                       width: 350px;
-                                                                       display: inline-block;">
+                                           width: 430px;
+                                           display: inline-block;">
                                     <span id="wrapper-label-title" style="margin: 14px 0px 0px 30px;
-                                                                          height: 48px;
-                                                                          width: 325px;
-                                                                          display:inline-block;">
-                                        <p id="label-title" style="font-size: 22px;
-                                                                   font-weight: 700;
-                                                                   line-height: 25.3px;
-                                                                   margin: 0px;
-                                                                   color: #211F1E !important">Cambio de contraseña exitoso
-                                        </p>
+                                                 height: 48px;
+                                                 display:inline-block;">
+                                        <p id="label-title" style="font-size: 20px;
+                                                  font-weight: 700;
+                                                  line-height: 25.3px;
+                                                  margin: 0px;
+                                                  color: #211F1E !important">Recepción exitosa de Cashback</p>
                                     </span>
                                 </td>
                             </tr>
@@ -218,61 +234,110 @@
 
             <table class="table-module">
                 <tr>
-                    <td style="height: 30px;"></td>
+                    <td class="td-space-header" style="height:60px;"></td> 
+                </tr>
+                <tr>          
+                    <td class="elemnts-body" style="padding-left:120px;"> 
+                            <p class ="p-body-title" style="font-style: normal;
+                                                                    font-weight: 700;
+                                                                    font-size: 20px;
+                                                                    line-height: 21px;
+                                                                    color: #211F1E !important;">
+                                    Recibiste una transferencia de Cashback
+                            </p>  
+                    </td> 
                 </tr>
                 <tr>
-                    <td style="width: 457px;">
-                        <span id ="wrapper-body-text">
-                            <p class="elemnts-body" style="font-style: normal;
-                                      font-weight: 700;
-                                      font-size: 20px;
-                                      line-height: 23px;
-                                      margin: 0px 0px 0px 129px;"> Ya puedes ingresar a tu cuenta con total </p>
-                            <p class="elemnts-body" style="font-style: normal;
-                                      font-weight: 700;
-                                      font-size: 20px;
-                                      line-height: 23px;
-                                      margin: 0px 0px 18px 129px;">seguridad.</p>
-                            <p id="text-body" style=" font-style: normal;
-                                       font-weight: 400;
-                                       font-size: 18px;
-                                       line-height: 20.7px;
-                                       margin: 30px 0px 0px 129px;">
-                                {{var:updatedAt:""}}</p>
-                            
+                    <td style="height: 18px;"></td>
+                </tr>
+                <tr>
+                    <td class = "elemnts-body" style="padding-left: 120px;">
+                        <span class="container-body-table" style="width: 432px;
+                                    height: 54px;
+                                    display: inline-block;
+                                    border: 1px solid #E3E3E3 !important;
+                                    border-radius: 10px;
+                                    height: 54px;
+                                    margin: 0px 0px 24px;
+                                    background-color: #F8F7F7 !important;">
+                         <table class="container-body-table" style="width: 432px; height: 54px;">
+                            <tr>
+                                <td style="width: 210px;">
+                                    <p class="p-body-subtitle" style="color: #211F1E;
+                                            vertical-align: top;
+                                            display: inline-block;
+                                            font-size: 16px;
+                                            font-weight: bold;    
+                                            margin: 18px 0px 18px 30px;
+                                            line-height: 22px;">
+                                        Cashback transferido:
+                                    </p>
+                                </td>
+                                <td style="width: 25px;"></td>
+                                <td>
+                                    <p class="p-body-subtitle" style="color: #211F1E;
+                                            font-size: 16px;
+                                            margin: 18px 30px 18px 0px;
+                                            font-weight: normal;
+                                            vertical-align: top;
+                                            display: inline-block;
+                                            line-height: 22px;">
+                                        {{var:millas:""}}
+                                    </p>
+                                </td>
+                            </tr>
+                         </table>
                         </span>
-                    
                     </td>
                 </tr>
                 <tr>
-                    <td style="height: 30px;"></td>
-                   
+                    <td style="width:18px;"></td>
                 </tr>
                 <tr>
-                    <td>
-                        <button class="elemnts-body" type="submit" style="margin: 0px 0px 65px 129px;
-                                                     width: 242px;
-                                                     height: 48px;
-                                                     border-radius: 24px;
-                                                     background: #F47920;
-                                                     border: 0px solid;">
-                            <span style="margin: 12px 28px;
-                                            height: 19px;
-                                            width: 170px;">
-                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/BodyDiscover/IconoUser.png" style="width: 24px; height: 24px;"> 
-                                <p style="color: #FFF;
-                                font-family: Gotham;
-                                font-size: 16px;
-                                font-style: normal;
-                                font-weight: 500;
-                                line-height: normal;
-                                display: inline-block;
-                                margin: 2px 0px 0px 24px;
-                                vertical-align: top;">
-                                    Ingresar ahora
-                                </p>
-                            </span>
-                        </button>
+                    <td class="elemnts-body " style="padding-left:120px;"> 
+                        <p class="p-body-title" style=" color: #211F1E !important;
+                                            font-size: 20px;
+                                            font-weight: 400;
+                                            line-height: 18px;
+                                            text-align: left;
+                                            vertical-align: top;
+                                            display: inline-block;">
+                                    Para: {{var:destinationusername:""}}
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 18px;"></td>
+                </tr>
+                <tr>
+                    <td class="elemnts-body" style="padding-left:80px;";>
+                        <a href="https://discover-ec.developppm.com/mi-cuenta/consulte-su-saldo">
+                            <button class="btn-body" type="submit" style="margin: 0px 0px 60px 129px;
+                                                        width: 242px;
+                                                        height: 48px;
+                                                        cursor: pointer;
+                                                        border-radius: 24px;
+                                                        background: #F47920;
+                                                        border: 0px solid;">
+                                <span style="margin: 12px 28px;
+                                                height: 19px;
+                                                width: 170px;
+                                                display: inline-block">
+                                    <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/BodyDiscover/IconoUser.png" style="width: 24px; height: 24px;"> 
+                                    <p class="btn-text-body" style="color: #FFF;
+                                    font-family: Gotham;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    line-height: normal;
+                                    display: inline-block;
+                                    margin: 2px 0px 0px 24px;
+                                    vertical-align: top;">
+                                              Ver Mi Cashback
+                                    </p>
+                                </span>
+                            </button>
+                        </a>
                     </td>
                 </tr>
             </table>
@@ -283,30 +348,34 @@
                         <table class="table-full-width">
                             <tr>
                                 <td id="td-img-footer" style="width: 80px;
-                                overflow: hidden;
-                                display: inline-block;">
-                                    <img id="img-footer" src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/FooterDiscover/NoRealizasteIcono.png" alt="logo" 
-                                        style="margin: 15px 0px 0px 32px;height: 48px;width: 48px;">
+                                                                overflow: hidden;
+                                                                display: inline-block;">
+                                    <a href="https://api.whatsapp.com/send?phone=+593983567033&text=Hola esto es un mensaje desde whatsapp">
+                                        <img id="img-footer" src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/FooterDiscover/IconWhatsapp.png" alt="logo" 
+                                            style="margin: 0px 0px 0px 32px;height: 44px;width: 44px;">
+                                    </a>
                                 </td>
                                 <td id="td-label-footer" style="display: inline-block;">
-                                    <p id="p-text-footer-title" style="margin: 20px 0px 0px 30px;
-                                            font-size: 16px;
-                                            font-weight: 700;
-                                            line-height: normal;
-                                            font-style: normal;
-                                            color: #211F1E !important;">¿No realizaste esta acción?
-                                    </p>
-                                    <p id="p-text-footer-sub-title" style="margin: 0px 0px 30px 30px;
-                                            font-size: 14px;
-                                            font-weight: 400;
-                                            line-height: normal;
-                                            font-style: normal;
-                                            color: #211F1E !important;">Comunícate al 
-                                        <strong style="font-weight: 700;color: #F47920 !important;">
-                                                    1800-DISCOVER (347 268)
-                                        </strong>
-                                    </p>
+                                    <span>
+                                        <p id="p-text-footer-title" style="margin: 0px 0px 0px 12px;
+                                                font-size: 16px;
+                                                font-weight: 700;
+                                                line-height: normal;
+                                                font-style: normal;
+                                                color: #211F1E !important;">¿Necesitas ayuda?
+                                        </p>
+                                        <p id="p-text-footer-sub-title" style="margin: 0px 0px 0px 12px;
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                line-height: normal;
+                                                font-style: normal;
+                                                color: #211F1E !important;">Comunícate con nosotros
+                                        </p>
+                                    </span>
                                 </td>
+                            </tr>
+                            <tr>
+                                <td style="height: 30px;"></td>
                             </tr>
                         </table>
                     </td>

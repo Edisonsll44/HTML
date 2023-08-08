@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CambioClave</title>
+    <title>CanjeProductosMiles</title>
       <!--[if mso]> <noscript> <xml> <o:OfficeDocumentSettings> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml> </noscript> <![endif]-->
     <style>
         @media only screen and (max-width: 480px) {
@@ -12,6 +12,10 @@
                 width: 100% !important;
                 margin: 0 auto !important;
                 padding: 0px;
+            }
+
+            .table-module {
+                width:100% !important;
             }
 
            td {
@@ -110,21 +114,17 @@
                 margin: 30px 24px 0px 24px !important;
            }
 
+           .div-body {
+                width: 100% !important;
+           }
+
            .elemnts-body {
                 margin: 0px 24px 0px 24px !important;
                 font-size: 16px !important;
            }
-
-           .table-module {
-                width:100% !important;
-            }
-
-            .table-full-width {
-                width: 100% !important;
-           }
         }
         body {
-            font-family: Helvetica;
+            font-family:Helvetica;
             width: 700px;
             margin: 0 auto;
             padding: 0px;
@@ -157,12 +157,12 @@
                     </td>
                     <td></td>
                     <td style="width: 138px;">
-                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/Campana.png" alt="campana" style="width: 36px;height: 36px;    margin: 0px 36px 0px 76px;">
+                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/IconCarrito.png" alt="campana" style="width: 36px;height: 36px;    margin: 0px 36px 0px 76px;">
                     </td>
                 </tr>
                 <tr style="height: 162px;background-color: #F8F7F7 !important;">
                     <td colspan="3" style="vertical-align: top;">
-                        <table class="table-full-width">
+                        <table>
                             <tr>
                                 <td id="td-label-user-name">
                                     <span id="wrapper-label-user-name" style="width: 267px;
@@ -173,14 +173,16 @@
                                                 backdrop-filter: blur(2px);
                                                 display: inline-block;
                                                 margin: 30px 0px 0px 42px;">
-                                       <p id="label-user-name" style="font-style: normal;
+                                    <p id="label-user-name" style="font-style: normal;
                                        font-weight: 700;
                                        font-size: 16px;
                                        line-height: 18.4px;
                                        text-align: center;
                                        color: #211F1E;
                                        margin: 12px 36px;
-                                       display: inline-block;">Hola, {{var:username:""}}</p> 
+                                       display: inline-block;">
+                                       Hola, {{var:username:""}}
+                                    </p> 
                                     </span>
                                 </td>
                             </tr>
@@ -192,7 +194,7 @@
                                              height: 48px;
                                              width: 48px;
                                              display: inline-block;">
-                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/Check.png" alt="logo" style="height: 48px;width: 48px;">
+                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/IconRegalo.png" alt="logo" style="height: 48px;width: 48px;">
                                     </span>
                                 </td>
                                 <td id="td-wrapper-label-title" style="height: 48px;
@@ -200,13 +202,14 @@
                                                                        display: inline-block;">
                                     <span id="wrapper-label-title" style="margin: 14px 0px 0px 30px;
                                                                           height: 48px;
-                                                                          width: 325px;
+                                                                          width: 420px;
                                                                           display:inline-block;">
                                         <p id="label-title" style="font-size: 22px;
                                                                    font-weight: 700;
                                                                    line-height: 25.3px;
                                                                    margin: 0px;
-                                                                   color: #211F1E !important">Cambio de contraseña exitoso
+                                                                   color: #211F1E !important">
+                                                                   Tu canje se ha realizado correctamente.
                                         </p>
                                     </span>
                                 </td>
@@ -222,24 +225,34 @@
                 </tr>
                 <tr>
                     <td style="width: 457px;">
-                        <span id ="wrapper-body-text">
-                            <p class="elemnts-body" style="font-style: normal;
-                                      font-weight: 700;
-                                      font-size: 20px;
-                                      line-height: 23px;
-                                      margin: 0px 0px 0px 129px;"> Ya puedes ingresar a tu cuenta con total </p>
-                            <p class="elemnts-body" style="font-style: normal;
-                                      font-weight: 700;
-                                      font-size: 20px;
-                                      line-height: 23px;
-                                      margin: 0px 0px 18px 129px;">seguridad.</p>
-                            <p id="text-body" style=" font-style: normal;
-                                       font-weight: 400;
-                                       font-size: 18px;
-                                       line-height: 20.7px;
-                                       margin: 30px 0px 0px 129px;">
-                                {{var:updatedAt:""}}</p>
-                            
+                        <span style="padding-left:131px; background: #FFFF !important;">
+                            <p style="padding-left:131px; font-style: normal;font-weight: 700;font-size: 18px;line-height: 21px;color: #211F1E !important;">Detalle del producto</p>                     
+                            <span style=" width: 470px;height: 243px;">
+                                <div class="div-body" style="color: #798083 ;  border-radius: 10px;background:#FBFBFB !important">
+                                    {% for product in var:order_lines %}
+                                    <div class="div-body" style=" border: 2px solid #211F1E;border-radius: 10px; margin: 2% 19%;width: 470px;">
+                                        <div >
+                                            <img src="{{product.image}}" style="width: 69px;height: 69px;background: url(placeholder-image), #FAFAFA;padding: 30px 30px 30px 30px;vertical-align: top;display: inline-block;margin-top: 5px;margin-left: 5px;filter: brightness(1.1);mix-blend-mode: multiply;">
+                                            <p style="font-family: Helvetica!important; font-size: 18px; font-weight: normal;line-height: 21px;text-align: center; color: #211F1E !important; padding: 0 0 5px 0;vertical-align: top;display: inline-block;margin-top: 54px;max-width: 25ch;">{{product.product_name}}</p>
+                                        </div>
+                                        <div style="margin: 0px;">
+                                            <div>
+                                                <p style="font-family: Helvetica !important; font-size: 16px; font-weight: normal;text-align: left; color: #211F1E !important; padding: 5px !important;">
+                                                    <span style="margin-left: 22px !important;">Cantidad: </span>
+                                                    <span style="display: inline-block;vertical-align: bottom;color: #211F1E!important;text-align: right;width: 70%;">{{product.quantity}}</span>
+                                                </p>
+                                                <div style="width: 90%;">
+                                                    <hr style="border: 2px solid #211F1E;margin-left: 25px;">
+                                                </div>
+                                                <p style="font-family: Helvetica !important; font-size: 16px; font-weight: normal;text-align: left; color: #211F1E!important; padding: 5px !important;">
+                                                    <span style="margin-left: 22px !important;">Millas canjeadas: </span>
+                                                    <span style="display: inline-block;vertical-align: bottom;color: #211F1E!important;text-align: right;width: 58%;">{{product.points_amount}}</span>
+                                                </p>
+                                            </div>
+                                            <br>
+                                        </div>
+                                    </div>{% endfor %}<br>
+                            </span>
                         </span>
                     
                     </td>
@@ -248,69 +261,98 @@
                     <td style="height: 30px;"></td>
                    
                 </tr>
+            </table>
+
+
+            <table class="table-module">
                 <tr>
-                    <td>
-                        <button class="elemnts-body" type="submit" style="margin: 0px 0px 65px 129px;
-                                                     width: 242px;
-                                                     height: 48px;
-                                                     border-radius: 24px;
-                                                     background: #F47920;
-                                                     border: 0px solid;">
-                            <span style="margin: 12px 28px;
-                                            height: 19px;
-                                            width: 170px;">
-                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/BodyDiscover/IconoUser.png" style="width: 24px; height: 24px;"> 
-                                <p style="color: #FFF;
-                                font-family: Gotham;
-                                font-size: 16px;
-                                font-style: normal;
-                                font-weight: 500;
-                                line-height: normal;
-                                display: inline-block;
-                                margin: 2px 0px 0px 24px;
-                                vertical-align: top;">
-                                    Ingresar ahora
-                                </p>
-                            </span>
-                        </button>
+                    <td style="height: 30px;"></td>
+                </tr>
+                <tr>          
+                    <td style="padding-left:129px;"> 
+                        <span>
+                            <p style="font-style: normal;font-weight: 700;font-size: 18px;line-height: 21px;color: #211F1E !important;">Detalle del canje</p>  
+                        </span>  
+                        <span style=" width: 470px;display: inline-block;border: 1px solid #E3E3E3 !important;border-radius: 10px;height: 54px;background: #FFF !important;">
+                            <table style="width: 470px;border: none;border-spacing: 0;">
+                                <tr>
+                                    <td style=" color: #211F1E !important;
+                                    font-size: 16px;
+                                    margin-left: 22px;
+                                    margin-top: 17px;
+                                    font-weight: 400;
+                                    line-height: 18px;
+                                    text-align: left;
+                                    vertical-align: top;
+                                    display: inline-block;
+                                    width: 35%;">Cashback canjeado:</td>
+                                    <td style="display: inline-block;
+                                    vertical-align: bottom;
+                                    color: #211F1E !important;
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    line-height: 18px;
+                                    text-align: right;
+                                    width: 50%;">{{var:total_points_amount:""}}</td>
+                                </tr>
+                            </table>
+                        </span>
+                    </td> 
+                </tr>
+                <tr>
+                    <td style="height: 20px;"></td>
+                   
+                </tr>
+                <tr>
+                    <td style="margin-left: 126px;margin-top: 9px;vertical-align: top;display: inline-block;width: 67%;">
+                        <hr style="border: 1px solid #E3E3E3;">
                     </td>
+                </tr>
+                <tr>
+                    <td style="padding-left:129px;"> 
+                        <span>
+                            <p style="font-style: normal;font-weight: 700;font-size: 18px;line-height: 21px;color: #211F1E !important;">Términos y condiciones</p>  
+                            <ul style="font-weight: 400;font-size: 14px;line-height: 16px;font-style: normal;margin-left: -25px;display: inline-block;margin-top: -4px;color: #211F1E !important;">
+                                <li>Los productos serán entregados en máximo 15 días laborables.</li>
+                            </ul>  
+                        </span>  
+                    </td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td style="height: 50px;">&nbsp;</td>
                 </tr>
             </table>
 
             <table class="table-module">
-                <tr>
-                    <td colspan="3" style="vertical-align: top;">
-                        <table class="table-full-width">
-                            <tr>
-                                <td id="td-img-footer" style="width: 80px;
-                                overflow: hidden;
-                                display: inline-block;">
-                                    <img id="img-footer" src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/FooterDiscover/NoRealizasteIcono.png" alt="logo" 
-                                        style="margin: 15px 0px 0px 32px;height: 48px;width: 48px;">
-                                </td>
-                                <td id="td-label-footer" style="display: inline-block;">
-                                    <p id="p-text-footer-title" style="margin: 20px 0px 0px 30px;
-                                            font-size: 16px;
-                                            font-weight: 700;
-                                            line-height: normal;
-                                            font-style: normal;
-                                            color: #211F1E !important;">¿No realizaste esta acción?
-                                    </p>
-                                    <p id="p-text-footer-sub-title" style="margin: 0px 0px 30px 30px;
-                                            font-size: 14px;
-                                            font-weight: 400;
-                                            line-height: normal;
-                                            font-style: normal;
-                                            color: #211F1E !important;">Comunícate al 
-                                        <strong style="font-weight: 700;color: #F47920 !important;">
-                                                    1800-DISCOVER (347 268)
-                                        </strong>
-                                    </p>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
+
+                <td colspan="3" style="vertical-align: top;">
+                    <table>
+                        <tr>
+                            <td id="td-img-footer" style="width: 80px;
+                            overflow: hidden;
+                            display: inline-block;">
+                                <img id="img-footer" src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/FooterDiscover/IconWhatsapp.png" alt="logo" 
+                                     style="margin: 15px 0px 0px 32px;height: 48px;width: 48px;">
+                            </td>
+                            <td id="td-label-footer" style="display: inline-block;">
+                                <p id="p-text-footer-title" style="margin: 20px 0px 0px 30px;
+                                          font-size: 16px;
+                                          font-weight: 700;
+                                          line-height: normal;
+                                          font-style: normal;
+                                          color: #211F1E !important;">¿Necesitas ayuda?
+                                </p>
+                                <p id="p-text-footer-sub-title" style="margin: 0px 0px 30px 30px;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                          line-height: normal;
+                                          font-style: normal;
+                                          color: #211F1E !important;">Comunícate con nosotros.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
                 <tr style="background-color: #F8F7F7 !important;">
                     <td id="td-label-social-network" style="width: 243px;">
                         <span id="wrapper-label-social-network" style="vertical-align:bottom;

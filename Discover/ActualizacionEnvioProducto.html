@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CambioClave</title>
+    <title>ActualizacionEnvioProducto</title>
       <!--[if mso]> <noscript> <xml> <o:OfficeDocumentSettings> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml> </noscript> <![endif]-->
     <style>
         @media only screen and (max-width: 480px) {
@@ -12,6 +12,10 @@
                 width: 100% !important;
                 margin: 0 auto !important;
                 padding: 0px;
+            }
+
+            .table-module {
+                width:100% !important;
             }
 
            td {
@@ -34,7 +38,6 @@
 
            #label-title {
                 font-size: 20px !important;
-                width: 66% !important;
            }
 
            #wrapper-img-title{
@@ -106,7 +109,7 @@
                 width: 100% !important;
            }
 
-           #text-body {
+           #text-body-date {
                 margin: 30px 24px 0px 24px !important;
            }
 
@@ -115,14 +118,35 @@
                 font-size: 16px !important;
            }
 
-           .table-module {
-                width:100% !important;
-            }
-
-            .table-full-width {
+           .table-full-width {
                 width: 100% !important;
            }
+
+           .td-content-body-card {
+                padding-left: 20px !important;
+           }
+
+           .wrapper-table-body{
+                width: 96% !important;
+                margin: 0px !important;
+            }
+
+            .td-table-body {
+                width: 31% !important;
+                font-size: 14px !important;
+                margin: 17px 0px 15px 30px !important;
+           }
+
+           .p-body {
+                font-size: 12px !important;
+                margin: 24px 0px 24px 18px !important;
+            }
+            .p-body-second {
+                font-size: 12px !important;
+                margin: 0px 0px 24px 18px !important;
+            }
         }
+
         body {
             font-family: Helvetica;
             width: 700px;
@@ -157,7 +181,7 @@
                     </td>
                     <td></td>
                     <td style="width: 138px;">
-                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/Campana.png" alt="campana" style="width: 36px;height: 36px;    margin: 0px 36px 0px 76px;">
+                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/IconCarrito.png" alt="campana" style="width: 36px;height: 36px;    margin: 0px 36px 0px 76px;">
                     </td>
                 </tr>
                 <tr style="height: 162px;background-color: #F8F7F7 !important;">
@@ -192,22 +216,20 @@
                                              height: 48px;
                                              width: 48px;
                                              display: inline-block;">
-                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/Check.png" alt="logo" style="height: 48px;width: 48px;">
+                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/IconBolsaAmarilla.png" alt="logo" style="height: 48px;width: 48px;">
                                     </span>
                                 </td>
                                 <td id="td-wrapper-label-title" style="height: 48px;
-                                                                       width: 350px;
-                                                                       display: inline-block;">
+                                           width: 420px;
+                                           display: inline-block;">
                                     <span id="wrapper-label-title" style="margin: 14px 0px 0px 30px;
-                                                                          height: 48px;
-                                                                          width: 325px;
-                                                                          display:inline-block;">
+                                                 height: 48px;
+                                                 display:inline-block;">
                                         <p id="label-title" style="font-size: 22px;
-                                                                   font-weight: 700;
-                                                                   line-height: 25.3px;
-                                                                   margin: 0px;
-                                                                   color: #211F1E !important">Cambio de contraseña exitoso
-                                        </p>
+                                                  font-weight: 700;
+                                                  line-height: 25.3px;
+                                                  margin: 0px;
+                                                  color: #211F1E !important">Actualización de envío de productos</p>
                                     </span>
                                 </td>
                             </tr>
@@ -227,54 +249,134 @@
                                       font-weight: 700;
                                       font-size: 20px;
                                       line-height: 23px;
-                                      margin: 0px 0px 0px 129px;"> Ya puedes ingresar a tu cuenta con total </p>
-                            <p class="elemnts-body" style="font-style: normal;
-                                      font-weight: 700;
-                                      font-size: 20px;
-                                      line-height: 23px;
-                                      margin: 0px 0px 18px 129px;">seguridad.</p>
-                            <p id="text-body" style=" font-style: normal;
-                                       font-weight: 400;
-                                       font-size: 18px;
-                                       line-height: 20.7px;
-                                       margin: 30px 0px 0px 129px;">
-                                {{var:updatedAt:""}}</p>
-                            
+                                      margin: 0px 0px 0px 129px;"> Detalle de la transacción </p>
                         </span>
-                    
                     </td>
                 </tr>
                 <tr>
                     <td style="height: 30px;"></td>
-                   
                 </tr>
+            </table>
+
+            <table class="table-module">
+                <tbody>
                 <tr>
-                    <td>
-                        <button class="elemnts-body" type="submit" style="margin: 0px 0px 65px 129px;
-                                                     width: 242px;
-                                                     height: 48px;
-                                                     border-radius: 24px;
-                                                     background: #F47920;
-                                                     border: 0px solid;">
-                            <span style="margin: 12px 28px;
-                                            height: 19px;
-                                            width: 170px;">
-                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/BodyDiscover/IconoUser.png" style="width: 24px; height: 24px;"> 
-                                <p style="color: #FFF;
-                                font-family: Gotham;
-                                font-size: 16px;
-                                font-style: normal;
-                                font-weight: 500;
-                                line-height: normal;
-                                display: inline-block;
-                                margin: 2px 0px 0px 24px;
-                                vertical-align: top;">
-                                    Ingresar ahora
-                                </p>
-                            </span>
-                        </button>
+                    <td class="td-content-body-card" style="padding-left:129px;">
+                        <span class="wrapper-table-body"  style="width: 545px;
+                                    display: inline-block;
+                                    border: 1px solid #E3E3E3;
+                                    background: #FFF !important;
+                                    border-radius: 12px;
+                                    height: 235px;">
+                            <table class ="wrapper-table-body">
+                                <tbody>
+                                    <tr>
+                                        <td class="td-table-body" style="width: 215px;">
+                                                <p class="p-body" style="color: #211F1E;
+                                                font-size: 16px;
+                                                font-weight: 400;
+                                                font-style: normal;
+                                                line-height: normal;
+                                                text-align: left;
+                                                vertical-align: top;
+                                                display: inline-block;
+                                                margin: 30px 0px 24px 30px;">
+                                                    Envío:
+                                                </p>
+                                        </td>
+                                        <td style="width: 161px;"></td>
+                                        <td  style="width: 150px;">
+                                                <p class="p-body" style="font-size: 16px;
+                                                font-weight: 700;
+                                                font-style: normal;
+                                                line-height: normal;
+                                                color: #211F1E;
+                                                margin: 30px 30px 24px 0px;
+                                                text-align: right;">
+                                                    {{var:estimated_delivered_date:""}}   
+                                                </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-table-body" style="width: 215px;">
+                                            <p class="p-body-second" style="color: #211F1E;
+                                            font-size: 16px;
+                                            font-weight: 400;
+                                            font-style: normal;
+                                            line-height: normal;
+                                            text-align: left;
+                                            vertical-align: top;
+                                            display: inline-block;
+                                            margin: 0px 0px 24px 30px;">Orden Nº:
+                                            </p>
+                                        </td>
+                                        <td style="width: 161px;"></td>
+                                        <td  style="width: 150px;">
+                                            <p class="p-body-second" style="font-size: 16px;
+                                            font-weight: 700;
+                                            font-style: normal;
+                                            line-height: normal;
+                                            text-align: right;
+                                            color: #211F1E;
+                                            margin: 0px 30px 24px 0px;">{{var:order_Id:""}}
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-table-body" style="width: 215px;">
+                                            <p class="p-body-second" style="color: #211F1E;
+                                            font-size: 16px;
+                                            font-weight: 400;
+                                            font-style: normal;
+                                            line-height: normal;
+                                            text-align: left;
+                                            margin: 0px 0px 24px 30px;">Número de guía:
+                                            </p>
+                                        </td>
+                                        <td style="width: 161px;"></td>
+                                        <td style="width: 150px;">
+                                            <p class="p-body-second" style="font-size: 16px;
+                                            font-weight: 700;
+                                            font-style: normal;
+                                            line-height: normal;
+                                            text-align: right;
+                                            color: #211F1E;
+                                            margin: 0px 30px 24px 0px;">{{var:courier_guide_number:""}}
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-table-body" style="width: 215px;">
+                                            <p class="p-body-second" style="color: #211F1E;
+                                            font-size: 16px;
+                                            font-weight: 400;
+                                            font-style: normal;
+                                            line-height: normal;
+                                            text-align: left;
+                                            margin: 0px 0px 24px 30px;">Estatus:
+                                            </p>
+                                        </td>
+                                        <td style="width: 161px;"></td>
+                                        <td style="width: 150px;">
+                                            <p class="p-body-second" style="font-size: 16px;
+                                            font-weight: 700;
+                                            font-style: normal;
+                                            line-height: normal;
+                                            text-align: right;
+                                            color: #211F1E;
+                                            margin: 0px 30px 24px 0px;">{{var:status:""}}
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </span>
                     </td>
                 </tr>
+                <tr>
+                    <td style="height: 24px;"></td>
+                </tr>
+                </tbody>
             </table>
 
             <table class="table-module">
@@ -285,28 +387,32 @@
                                 <td id="td-img-footer" style="width: 80px;
                                 overflow: hidden;
                                 display: inline-block;">
-                                    <img id="img-footer" src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/FooterDiscover/NoRealizasteIcono.png" alt="logo" 
-                                        style="margin: 15px 0px 0px 32px;height: 48px;width: 48px;">
+                                    <a href="https://api.whatsapp.com/send?phone=+593983567033&text=Hola esto es un mensaje desde whatsapp">
+                                        <img id="img-footer" src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/FooterDiscover/IconWhatsapp.png" alt="logo" 
+                                            style="margin: 0px 0px 0px 32px;height: 44px;width: 44px;">
+                                    </a>
                                 </td>
                                 <td id="td-label-footer" style="display: inline-block;">
-                                    <p id="p-text-footer-title" style="margin: 20px 0px 0px 30px;
-                                            font-size: 16px;
-                                            font-weight: 700;
-                                            line-height: normal;
-                                            font-style: normal;
-                                            color: #211F1E !important;">¿No realizaste esta acción?
-                                    </p>
-                                    <p id="p-text-footer-sub-title" style="margin: 0px 0px 30px 30px;
-                                            font-size: 14px;
-                                            font-weight: 400;
-                                            line-height: normal;
-                                            font-style: normal;
-                                            color: #211F1E !important;">Comunícate al 
-                                        <strong style="font-weight: 700;color: #F47920 !important;">
-                                                    1800-DISCOVER (347 268)
-                                        </strong>
-                                    </p>
+                                    <span>
+                                        <p id="p-text-footer-title" style="margin: 0px 0px 0px 12px;
+                                                font-size: 16px;
+                                                font-weight: 700;
+                                                line-height: normal;
+                                                font-style: normal;
+                                                color: #211F1E !important;">¿Necesitas ayuda?
+                                        </p>
+                                        <p id="p-text-footer-sub-title" style="margin: 0px 0px 0px 12px;
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                line-height: normal;
+                                                font-style: normal;
+                                                color: #211F1E !important;">Comunícate con nosotros
+                                        </p>
+                                    </span>
                                 </td>
+                            </tr>
+                            <tr>
+                                <td style="height: 30px;"></td>
                             </tr>
                         </table>
                     </td>
