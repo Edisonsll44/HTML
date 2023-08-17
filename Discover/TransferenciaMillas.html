@@ -122,12 +122,16 @@
            }
 
            .btn-body {
-                margin: 0px 60px !important;
+                margin: 0px !important;
            }
 
-           .btn-text-body {
+           .btn-body-img {
+                margin: 0px 60px !important;
+                width: 20%  !important;
+           }
+
+           .btn-body-text {
                 font-size: 15px !important;
-                margin: 2px 0px 0px 0px;
            }
 
            .td-space-header {
@@ -159,7 +163,6 @@
         }
        
       </style>
-      </style>
       
 </head>
 <body>
@@ -171,7 +174,7 @@
             <table class="table-module">
                 <tr style="height: 72px;border-bottom: 2px solid #F47920 !important;">
                     <td style="width: 138px;">
-                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/DiscoverLogo.png" alt="logo" style="margin: 0px 0px 0px 32px;">
+                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/discover.webp" alt="logo" style="margin: 0px 0px 0px 32px;">
                     </td>
                     <td></td>
                     <td style="width: 138px;">
@@ -183,7 +186,7 @@
                         <table class="table-full-width">
                             <tr>
                                 <td id="td-label-user-name">
-                                    <span id="wrapper-label-user-name" style="width: 267px;
+                                    <span id="wrapper-label-user-name" style="width: 340px;
                                                 height: 42px;
                                                 border-radius: 54px;
                                                 border: 2px solid #F47920;
@@ -198,7 +201,7 @@
                                        text-align: center;
                                        color: #211F1E;
                                        margin: 12px 36px;
-                                       display: inline-block;">Hola, {{var:username:""}}</p> 
+                                       display: inline-block;">Hola, Maria Emilia Cornaza</p> 
                                     </span>
                                 </td>
                             </tr>
@@ -319,23 +322,29 @@
                                                         border-radius: 24px;
                                                         background: #F47920;
                                                         border: 0px solid;">
-                                <span style="margin: 12px 28px;
-                                                height: 19px;
-                                                width: 170px;
-                                                display: inline-block">
-                                    <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/BodyDiscover/IconoUser.png" style="width: 24px; height: 24px;"> 
-                                    <p class="btn-text-body" style="color: #FFF;
-                                    font-family: Gotham;
-                                    font-size: 16px;
-                                    font-style: normal;
-                                    font-weight: 500;
-                                    line-height: normal;
-                                    display: inline-block;
-                                    margin: 2px 0px 0px 24px;
-                                    vertical-align: top;">
-                                              Ver Mi Cashback
-                                    </p>
-                                </span>
+                                    <table>
+                                        <tr>
+                                            <td class="btn-body-img">
+                                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/BodyDiscover/IconoUser.png" 
+                                                style="width: 24px; height: 24px; 
+                                                margin: 0px 0px 0px 40px;"> 
+                                            </td>
+                                            <td>
+                                                <p class="btn-body-text" style="color: #FFF;
+                                                    font-family: Gotham;
+                                                    font-size: 16px;
+                                                    font-style: normal;
+                                                    font-weight: 500;
+                                                    line-height: normal;
+                                                    display: inline-block;
+                                                    margin: 0px 40px 0px 0px;
+                                                    vertical-align: top;
+                                                    text-align: left;">
+                                                            Ver Mi Cashback
+                                                    </p>
+                                            </td>
+                                        </tr>
+                                    </table>
                             </button>
                         </a>
                     </td>
