@@ -78,7 +78,7 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p style="margin: 0px 0px 24px 18px;
+                                        <p style="margin: 0px 0px 24px 24px;
                                                   color:#F7F8FC !important;
                                                   font-family: Helvetica;
                                                   font-size: 16px;
@@ -111,7 +111,7 @@
                                             font-style: normal;
                                             font-weight: 700;
                                             line-height: normal;
-                                            margin: 0px 0px 42px 62px;">Tu canje se ha realizado correctamente.</p>
+                                            margin: 0px 0px 42px 57px;">Tu canje se ha realizado correctamente.</p>
                                 </td>
                             </tr>
                         </table>
@@ -133,11 +133,11 @@
                 <span>
                     <div style="color: #798083;  border-radius: 10px;background: #FFFFFF;">
                         {% for product in var:order_lines %}
-                        <div style=" border: 2px solid #B7C3FF;background-color: #FFFFFF !important; border-radius: 10px; margin: 2% 6%;width: 555px;">
+                        <div style=" border: 1px solid #B7C3FF;background-color: #FFFFFF !important; border-radius: 10px; margin: 2% 8.5%;width: 555px;">
                             <div >
                                 <img src="{{product.image}}" style="width: 111px;
                                 height: 85px;
-                                background: url(placeholder-image), #FAFAFA;
+                                background: url(placeholder-image);
                                 padding: 10px;
                                 vertical-align: top;
                                 display: inline-block;
@@ -162,7 +162,7 @@
                                         color: #9B9CA0 !important;
                                         margin: 1px 5px 1px 0px !important;
                                         font-weight: 300;">
-                                        Cantidad: {{product.quantity}}
+                                        Cantidad: <b>{{product.quantity}}</b>
                                 </p>
                                 <p style="font-family: Helvetica !important;
                                         font-size: 14px;
@@ -171,7 +171,8 @@
                                         color: #9B9CA0 !important;
                                         font-weight: 300;
                                         margin: 1px 5px 1px 0px !important;">
-                                        Millas canjeadas: {{product.points_amount}}
+                                        Millas canjeadas: 
+                                  <b>{{product.points_amount}}</b>
                                 </p>
                             </span>
                             </div>
@@ -193,7 +194,7 @@
                 </p>                     
                 <span style=" width: 570px;height: 243px;">
                     <div style="color: #798083;  border-radius: 10px;background: #FFFFFF;">
-                        <div style=" border: 2px solid #B7C3FF;background-color: #FFFFFF !important;border-radius: 10px; margin: 2% 6%;width: 555px;">
+                        <div style=" border: 1px solid #B7C3FF;background-color: #FFFFFF !important;border-radius: 10px; margin: 2% 8.5%;width: 555px;">
                             <div style="margin: 0px;">
                                 <div>
                                     <p style="font-size: 18px; 
@@ -211,7 +212,7 @@
                                         font-weight: 700;
                                         line-height: normal;
                                         text-align: left; 
-                                        color: #211F1E !important;  
+                                        color: #001850 !important;  
                                         margin: 0px 0px 18px 24px;;">
                                         {{var:total_points_amount:""}}
                                     </p>
@@ -274,15 +275,15 @@
                 <tr>
                     <td style=" background-image: url('https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/BGR/footer/footer-info.png');background-repeat: no-repeat;height: 45px; width: 700px;">
                         <span style="vertical-align: bottom;display: inline-block;margin-left: 30px;margin-top: 5px;">
-                            <a style=" border: 0px solid #000000;border-radius: 36px;" href="https://www.facebook.com/BGRoficial?mibextid=LQQJ4d">
+                            <a style="border:0px solid #000000;border-radius:36px" href="https://www.facebook.com/BGRoficial?mibextid=LQQJ4d">
                                 <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/BGR/footer/fb-bgr.png" style="margin-right: 5px;" alt="facebook">
                             </a>
                         
-                            <a style=" border: 0px solid #000000;border-radius: 36px;" href="https://instagram.com/bgr_ecuador?igshid=NTc4MTIwNjQ2YQ==">
+                            <a style="border:0px solid #000000;border-radius:36px" href="https://instagram.com/bgr_ecuador?igshid=NTc4MTIwNjQ2YQ==">
                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/BGR/footer/int-bgr.png" style="margin-right: 5px;" alt="instagram">
                             </a>
                             
-                            <a style=" border: 0px solid #000000;border-radius: 36px;" href="https://youtube.com/@MERCADEOBGR">
+                            <a style="border:0px solid #000000;border-radius:36px" href="https://youtube.com/@MERCADEOBGR">
                                 <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/BGR/footer/ytb-bgr.png" style="margin-right: 5px;" alt="youtube">
                             </a>
                         </span>
