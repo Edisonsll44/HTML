@@ -1,0 +1,577 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanjeProductosMiles</title>
+      <!--[if mso]> <noscript> <xml> <o:OfficeDocumentSettings> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml> </noscript> <![endif]-->
+    <style>
+        @media only screen and (max-width: 480px) {
+            body {
+                width: 100% !important;
+                margin: 0 auto !important;
+                padding: 0px;
+            }
+
+            .table-module {
+                width:100% !important;
+            }
+
+           td {
+                width: 100% !important;
+           }
+
+           #wrapper-label-user-name{
+                width: 83% !important;
+                margin: 30px 24px 0px !important;
+           }
+
+           #label-user-name {
+                margin: 12px 0px !important;
+                width: 100% !important;
+           }
+
+           #wrapper-label-title {
+                margin: 0px !important;
+           }
+
+           #label-title {
+                font-size: 20px !important;
+           }
+
+           #wrapper-img-title{
+                width: 55% !important;
+                margin: 24px 0px 18px 24px !important;
+           }
+
+           #td-wrapper-img-title {
+                width: 25% !important;
+           }
+           #td-wrapper-label-title {
+                width: 73% !important;
+           }
+
+           #td-img-footer{
+            width: 20% !important;
+           }
+
+           #td-label-footer {
+            width: 78% !important;
+           }
+           #img-footer {
+                margin: 24px 0px 0px 24px !important;
+                width: 44px !important;
+                height: 44px !important;
+           }
+           #p-text-footer-title {
+                margin: 20px 0px 0px 12px !important;
+                width: 100% !important;
+           }
+           
+           #p-text-footer-sub-title {
+                 margin: 0px 0px 0px 12px !important;
+                 width: 100% !important;
+           }
+
+           #td-label-social-network {
+                display: block !important;
+                width: 100% !important;
+                height: 27px !important;
+           }
+
+           #td-social-network {
+                width: 100% !important;
+                display: block !important;
+                height: 48px !important;
+           }
+
+           #td-center-body {
+                display: block !important;
+                height: 18px !important;
+           }
+
+           #wrapper-label-social-network {
+                width: 73% !important;
+           }
+
+           #label-social-network {
+                width: 100% !important;
+                text-align: center !important;
+           }
+
+           #wrapper-social-network {
+                width: 53% !important;
+                margin: 0px 91px 18px !important;
+           }
+
+           #wrapper-body-text {
+                width: 100% !important;
+           }
+
+           #text-body-date {
+                margin: 30px 24px 0px 24px !important;
+           }
+
+           #container-product {
+                width: 85% !important;
+           }
+
+           #p-container {
+                margin: 0px !important;
+           }
+           .elements-body {
+                margin: 0px 24px 0px 24px !important;
+                font-size: 16px !important;
+                padding: 0px !important;
+           }
+
+           .li-item {
+                width: 80% !important;
+                font-size: 1px !important;
+                padding: 0px !important;
+           }
+           .table-full-width {
+                width: 100% !important;
+           }
+
+           .td-content-body-card {
+                padding-left: 20px !important;
+           }
+
+           .wrapper-table-body{
+                width: 96% !important;
+                margin: 0px !important;
+            }
+
+            .td-table-body {
+                padding-left: 0px !important;
+           }
+
+           .p-body {
+                font-size: 12px !important;
+            }
+
+            .p-body-amount{
+                font-size: 12px !important;
+                text-align: left !important;
+                width: 50% !important;
+            }
+
+            .p-body-amount-label{
+                font-size: 12px !important;
+                text-align: left !important;
+                width: 28% !important;
+            }
+
+            .container-detail-product {
+                width: 59% !important;
+                margin: 0px 24px 0px 24px !important;
+            }
+        }
+
+        body {
+            font-family: Helvetica;
+            width: 700px;
+            margin: 0 auto;
+            padding: 0px;
+        }
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .table-module {
+            width:700px;
+            border:0 auto;
+            border-collapse:collapse;
+            border-spacing:0;
+            background: #FFFF !important;
+        }
+      </style>
+      
+</head>
+<body>
+    <table class="table-module">
+        <td style="display: none !important;">
+            {{var:textHeader:""}}
+        </td>
+        <tr>
+            <table class="table-module">
+                <tr style="height: 72px;border-bottom: 2px solid #F47920 !important;">
+                    <td style="width: 138px;">
+                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/DiscoverLogo.png" alt="logo" style="margin: 0px 0px 0px 32px;width: 112px;height: 25px">
+                    </td>
+                    <td></td>
+                    <td style="width: 138px;">
+                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/IconCarrito.png" alt="campana" style="width: 36px;height: 36px;    margin: 0px 36px 0px 76px;">
+                    </td>
+                </tr>
+                <tr style="height: 162px;background-color: #F8F7F7 !important;">
+                    <td colspan="3" style="vertical-align: top;">
+                        <table class="table-full-width">
+                            <tr>
+                                <td id="td-label-user-name">
+                                    <span id="wrapper-label-user-name" style="width: 280px;
+                                                height: 42px;
+                                                border-radius: 54px;
+                                                border: 2px solid #F47920;
+                                                background: linear-gradient(180deg, #FFF 0%, #F7F6F6 100%);
+                                                backdrop-filter: blur(2px);
+                                                display: inline-block;
+                                                margin: 30px 0px 0px 42px;">
+                                       <p id="label-user-name" style="font-style: normal;
+                                       font-weight: 700;
+                                       font-size: 16px;
+                                       line-height: 18.4px;
+                                       text-align: center;
+                                       color: #211F1E;
+                                       margin: 12px 36px;
+                                       display: inline-block;">Hola, {{var:username:""}}</p> 
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="td-wrapper-img-title" style="width: 80px;
+                                        overflow: hidden;
+                                        display: inline-block;">
+                                    <span id="wrapper-img-title"style="margin: 24px 0px 24px 32px;
+                                             height: 48px;
+                                             width: 48px;
+                                             display: inline-block;">
+                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/IconRegalo.png" alt="logo" style="height: 48px;width: 48px;">
+                                    </span>
+                                </td>
+                                <td id="td-wrapper-label-title" style="height: 48px;
+                                                                       width: 430px;
+                                                                       display: inline-block;">
+                                    <span id="wrapper-label-title" style="margin: 14px 0px 0px 30px;
+                                                                          height: 48px;
+                                                                          display:inline-block;">
+                                        <p id="label-title" style="font-size: 20px;
+                                                                   font-weight: 700;
+                                                                   line-height: 25.3px;
+                                                                   margin: 0px;
+                                                                   color: #211F1E !important">
+                                                                   Tu canje se ha realizado correctamente.
+                                        </p>
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="table-module">
+                <tr>
+                    <td style="height: 30px;"></td>
+                </tr>
+                <tr>
+                    <td style="width: 457px;">
+                        <span id ="wrapper-body-text" style="padding-left:131px; background: #FFFF !important;">
+                            <p class="elements-body" style="padding-left:131px; font-style: normal;font-weight: 700;font-size: 18px;line-height: 21px;color: #211F1E !important;">
+                                Detalle del producto
+                            </p>                     
+                            <span style=" width: 470px;height: 243px;">
+                                <div style="color: #798083 ;  border-radius: 10px;background:#FBFBFB !important">
+                                    {% for product in var:order_lines %}
+                                    <div id ="container-product" class="elements-body" style=" border: 2px solid #E3E3E3;border-radius: 10px; margin: 2% 19%;width: 470px;">
+                                        <div >
+                                            <img src="{{product.image}}" style="width: 69px;height: 69px;background: url(placeholder-image), #FAFAFA;padding: 30px 30px 30px 30px;vertical-align: top;display: inline-block;margin-top: 5px;margin-left: 5px;filter: brightness(1.1);mix-blend-mode: multiply;">
+                                            <p class="p-body" style="font-family: Helvetica!important; font-size: 18px; font-weight: 700;line-height: 21px;text-align: center; color: #211F1E !important; padding: 0 0 5px 0;vertical-align: top;display: inline-block;margin-top: 54px;max-width: 25ch;">
+                                                {{product.product_name}}
+                                            </p>
+                                        </div>
+                                        <div style="margin: 0px;">
+                                            <div>
+                                                <p id="p-container" style="font-family: Helvetica !important; font-size: 16px; font-weight: normal;text-align: left; color: #211F1E !important; padding: 5px !important;">
+                                                    <span class="p-body" style="margin-left: 22px !important;">Cantidad: </span>
+                                                    <span class="p-body" style="display: inline-block;vertical-align: bottom;color: #211F1E!important;text-align: right;width: 70%;  font-weight: 700;">{{product.quantity}}</span>
+                                                </p>
+                                                <div style="width: 90%;">
+                                                    <hr style="border: 1px solid #211F1E;margin-left: 25px;">
+                                                </div>
+                                                <p style="font-family: Helvetica !important; font-size: 16px; font-weight: normal;text-align: left; color: #211F1E!important; padding: 5px !important;">
+                                                    <span class="p-body" style="margin-left: 22px !important;">Cashback canjeado: </span>
+                                                    <span class="p-body" style="display: inline-block;vertical-align: bottom;color: #211F1E!important;text-align: right;width: 58%; font-weight: 700;">{{product.points_amount}}</span>
+                                                </p>
+                                            </div>
+                                            <br>
+                                        </div>
+                                    </div>{% endfor %}<br>
+                            </span>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 10px;"></td>
+                </tr>
+            </table>
+
+            <table class="table-module">
+                <tr>          
+                    <td class="td-table-body" style="padding-left:129px;"> 
+                        <span>
+                            <p class="elements-body" style="font-style: normal;font-weight: 700;font-size: 18px;line-height: 21px;color: #211F1E !important;">Detalle del canje</p>  
+                        </span>  
+                        <span class="container-detail-product" style="width: 470px;display: inline-block;border: 1px solid #E3E3E3 !important;border-radius: 10px;height: 240px;background: #FFF !important;">
+                            <table style="width: 470px;border: none;border-spacing: 0;">
+                                <tr>
+                                    <td class="p-body-amount-label" style=" color: #211F1E !important;
+                                    font-size: 16px;
+                                    margin-left: 22px;
+                                    margin-top: 17px;
+                                    font-weight: 400;
+                                    line-height: 18px;
+                                    text-align: left;
+                                    vertical-align: top;
+                                    display: inline-block;
+                                    width: 40%;">Cashback canjeado:
+                                    </td>
+                                    <td class="p-body-amount" style="display: inline-block;
+                                    vertical-align: bottom;
+                                    color: #211F1E !important;
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    line-height: 18px;
+                                    text-align: right;
+                                    width: 50%;">{{var:total_points_amount:""}}
+                                    </td>
+                                    <td class="p-body-amount-label" style=" color: #211F1E !important;
+                                    font-size: 16px;
+                                    margin-left: 22px;
+                                    margin-top: 17px;
+                                    font-weight: 400;
+                                    line-height: 18px;
+                                    text-align: left;
+                                    vertical-align: top;
+                                    display: inline-block;
+                                    width: 40%;">Copago en dólares:
+                                    </td>
+                                    <td class="p-body-amount" style="display: inline-block;
+                                    vertical-align: bottom;
+                                    color: #211F1E !important;
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    line-height: 18px;
+                                    text-align: right;
+                                    width: 50%;">{{var:total_coins:""}}
+                                    </td>
+                                    <td class="p-body-amount-label" style=" color: #211F1E !important;
+                                    font-size: 16px;
+                                    margin-left: 22px;
+                                    margin-top: 17px;
+                                    font-weight: 400;
+                                    line-height: 18px;
+                                    text-align: left;
+                                    vertical-align: top;
+                                    display: inline-block;
+                                    width: 40%;">Total:
+                                    </td>
+                                    <td class="p-body-amount" style="display: inline-block;
+                                    vertical-align: bottom;
+                                    color: #211F1E !important;
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    line-height: 18px;
+                                    text-align: right;
+                                    width: 50%;">{{var:amount:""}}
+                                    </td>
+                                    <td class="p-body-amount-label" style=" color: #211F1E !important;
+                                    font-size: 16px;
+                                    margin-left: 22px;
+                                    margin-top: 17px;
+                                    font-weight: 400;
+                                    line-height: 18px;
+                                    text-align: left;
+                                    vertical-align: top;
+                                    display: inline-block;
+                                    width: 40%;">Fecha:
+                                    </td>
+                                    <td class="p-body-amount" style="display: inline-block;
+                                    vertical-align: bottom;
+                                    color: #211F1E !important;
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    line-height: 18px;
+                                    text-align: right;
+                                    width: 50%;">{{var:date:""}}
+                                    </td>
+                                    <td class="p-body-amount-label" style=" color: #211F1E !important;
+                                    font-size: 16px;
+                                    margin-left: 22px;
+                                    margin-top: 17px;
+                                    font-weight: 400;
+                                    line-height: 18px;
+                                    text-align: left;
+                                    vertical-align: top;
+                                    display: inline-block;
+                                    width: 40%;">Referencia:
+                                    </td>
+                                    <td class="p-body-amount" style="display: inline-block;
+                                    vertical-align: bottom;
+                                    color: #211F1E !important;
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    line-height: 18px;
+                                    text-align: right;
+                                    width: 50%;">{{var:reference:""}}
+                                    </td>
+                                   <td class="p-body-amount-label" style=" color: #211F1E !important;
+                                    font-size: 16px;
+                                    margin-left: 22px;
+                                    margin-top: 17px;
+                                    font-weight: 400;
+                                    line-height: 18px;
+                                    text-align: left;
+                                    vertical-align: top;
+                                    display: inline-block;
+                                    width: 40%;">Número de autorización:
+                                    </td>
+                                    <td class="p-body-amount" style="display: inline-block;
+                                    vertical-align: bottom;
+                                    color: #211F1E !important;
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    line-height: 18px;
+                                    text-align: right;
+                                    width: 50%;">{{var:authorization:""}}
+                                    </td>
+                                </tr>
+                            </table>
+                        </span>
+                    </td> 
+                </tr>
+                <tr>
+                    <td style="height: 20px;"></td>
+                   
+                </tr>
+                <tr>
+                    <td class="elements-body" style="margin-left: 126px;margin-top: 9px;vertical-align: top;display: inline-block;width: 67%;">
+                        <hr style="border: 1px solid #E3E3E3;">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-table-body" style="padding-left:129px;"> 
+                        <span>
+                            <p class="elements-body" style="font-style: normal;font-weight: 700;font-size: 18px;line-height: 21px;color: #211F1E !important;">Términos y condiciones</p>  
+                            <ul  style="font-weight: 400;font-size: 14px;line-height: 16px;font-style: normal;margin-left: -25px;display: inline-block;margin-top: -4px;color: #211F1E !important;">
+                                <li class="li-item"> Los productos serán entregados en máximo 15 días laborables.</li>
+                            </ul>  
+                        </span>  
+                    </td>
+                </tr>
+                <tr style="text-align: center;">
+                    <td style="height: 20px;">&nbsp;</td>
+                </tr>
+            </table>
+
+            <table class="table-module">
+                <tr>
+                    <td colspan="3" style="vertical-align: top;">
+                        <table class="table-full-width">
+                            <tr>
+                                <td id="td-img-footer" style="width: 80px;
+                                overflow: hidden;
+                                display: inline-block;">
+                                    <a href="https://api.whatsapp.com/send/?phone=593963040040&text&type=phone_number&app_absent=0p">
+                                        <img id="img-footer" src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/FooterDiscover/IconWhatsapp.png" alt="logo" 
+                                            style="margin: 0px 0px 0px 32px;height: 44px;width: 44px;">
+                                    </a>
+                                </td>
+                                <td id="td-label-footer" style="display: inline-block;">
+                                    <span>
+                                        <p id="p-text-footer-title" style="margin: 0px 0px 0px 12px;
+                                                font-size: 16px;
+                                                font-weight: 700;
+                                                line-height: normal;
+                                                font-style: normal;
+                                                color: #211F1E !important;">¿Necesitas ayuda?
+                                        </p>
+                                        <p id="p-text-footer-sub-title" style="margin: 0px 0px 0px 12px;
+                                                font-size: 14px;
+                                                font-weight: 400;
+                                                line-height: normal;
+                                                font-style: normal;
+                                                color: #211F1E !important;">Comunícate con nosotros
+                                        </p>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="height: 30px;"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr style="background-color: #F8F7F7 !important;">
+                    <td id="td-label-social-network" style="width: 243px;">
+                        <span id="wrapper-label-social-network" style="vertical-align:bottom;
+                                    height: 30px;
+                                    display: inline-block;
+                                    margin: 18px 0px 18px 42px;">
+                            <p id="label-social-network" style="text-align: left;
+                            font-size: 11px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            color: #211F1E  !important;">
+                                TU DINERO DE VUELTA, <strong style="font-weight: 700;">SIEMPRE.</strong>
+                            </p>
+                        </span>
+                    </td>
+                    <td id="td-center-body"></td>
+                    <td id="td-social-network" style="width: 194px;">
+                        <span id="wrapper-social-network" style="vertical-align:bottom;
+                                     height: 30px;
+                                     display: inline-block;
+                                     margin: 18px 0px 18px 0px;">
+                            <a style="border:0px solid #F47920;border-radius:36px" href="https://twitter.com/discoverecu?s=21&t=RhDLOB1Gi5VRakyuwoiC8g">
+                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/FooterDiscover/Twitter.png" 
+                                     style="margin-right: 14px;
+                                            height: 30px;
+                                            width: 30px;" alt="twitter">
+                            </a>
+                        
+                            <a style="border:0px solid #F47920;border-radius:36px" href="https://www.facebook.com/DiscoverEC?mibextid=LQQJ4d">
+                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/FooterDiscover/Facebook.png" 
+                                     style="margin-right: 14px;
+                                            height: 30px;
+                                            width: 30px;" alt="facebook">
+                            </a>
+                    
+                            <a style="border:0px solid #F47920;border-radius:36px" href="https://instagram.com/discover_ec?igshid=NTc4MTIwNjQ2YQ==">
+                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/FooterDiscover/Instagram.png" 
+                                     style="margin-right: 14px;
+                                            height: 30px;
+                                            width: 30px;" alt="instagram">
+                            </a>
+                        
+                            <a style="border:0px solid #F47920;border-radius:36px" href="https://youtube.com/@DiscoverEcuador">
+                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/FooterDiscover/Youtube.png" 
+                                     style="margin-right: 0px;
+                                            height: 30px;
+                                            width: 30px;" alt="youtube">
+                            </a>
+                        </span>
+                    </td>
+                </tr>
+                <tr style="background-color: #F47920 !important;">
+                    <td colspan="3" style="vertical-align: top;">
+                        <p style="text-align: center;
+                                  font-size: 11px;
+                                  font-style: normal;
+                                  font-weight: 400;
+                                  line-height: normal;
+                                  color: #FFF !important;">
+                    © 2023 Diners Club. Todos los derechos reservados.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </tr>
+    </table>
+</body>
+</html>
+

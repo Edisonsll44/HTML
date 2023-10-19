@@ -1,0 +1,362 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PagoRechazado</title>
+      <!--[if mso]> <noscript> <xml> <o:OfficeDocumentSettings> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml> </noscript> <![endif]-->
+    <style>
+        @media only screen and (max-width: 480px) {
+            body {
+                width: 100% !important;
+                margin: 0 auto !important;
+                padding: 0px;
+            }
+
+           td {
+                width: 100% !important;
+           }
+           
+           #wrapper-label-user-name{
+                width: 83% !important;
+                margin: 30px 24px 0px !important;
+           }
+
+           #label-user-name {
+                margin: 12px 0px !important;
+                width: 100% !important;
+           }
+
+           #wrapper-label-title {
+                margin: 0px !important;
+                width: 70% !important;
+           }
+
+           #label-title {
+                font-size: 20px !important;
+           }
+
+           #wrapper-img-title{
+                width: 55% !important;
+           }
+
+           #td-wrapper-img-title {
+                width: 25% !important;
+           }
+           #td-wrapper-label-title {
+                width: 70% !important;
+           }
+
+           #wrapper-footer {
+                margin: 24px 0px 24px 20px !important;
+                width: 87% !important;
+                height: 112px !important;
+           }
+
+           #img-footer {
+                  margin: 5px 0px 74px !important;
+           }
+
+           #text-body {
+                margin: 30px 24px 30px 24px !important;
+           }
+
+           .wrapper-table-body{
+                width: 90% !important;
+                margin: 0px 12px 0px 12px !important;
+            }
+
+           .elemnts-body {
+                margin: 0px 24px 0px 24px !important;
+                font-size: 16px !important;
+           }
+
+           .td-content-body-card {
+                padding-left: 0px !important;
+           }
+
+           .td-table-body {
+                width: 20% !important;
+           }
+
+           .td-table-body-value {
+                margin: 0px 30px 26px 30px !important;
+           }
+
+           .td-footer {
+                width: 0% !important;
+           }
+
+           .table-full-width {
+                width: 100% !important;
+           }
+
+           .table-module {
+                width:100% !important;
+            }
+
+            .p-body {
+                font-size: 14px !important;
+                margin: 24px 0px 24px 18px !important;
+            }
+            .p-body-second {
+                font-size: 14px !important;
+                margin: 0px 0px 24px 18px !important;
+            }
+        }
+
+
+        body {
+            font-family: Helvetica;
+            width: 700px;
+            margin: 0 auto;
+            padding: 0px;
+        }
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .table-module {
+            width:700px;
+            border:0 auto;
+            border-collapse:collapse;
+            border-spacing:0;
+            background: #FFFF !important;
+        }
+        .p-footer {
+            margin:0px; 
+            text-align: justify;
+        }
+      </style>
+      
+</head>
+<body>
+    <table class="table-module">
+        <tr>
+            <td style="display: none !important;">
+                {{var:textHeader:""}}
+            </td>
+        </tr>
+        <tr>
+            <table class="table-module">
+                <tr style="height: 72px;border-bottom: 2px solid #F47920 !important;">
+                    <td style="width: 138px;">
+                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/DiscoverLogo.png" alt="logo" style="margin: 0px 0px 0px 32px;width: 112px;height: 25px">
+                    </td>
+                    <td></td>
+                    <td style="width: 138px;">
+                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/IconCampanaError.png" alt="campana" style="width: 36px;height: 36px;    margin: 0px 36px 0px 76px;">
+                    </td>
+                </tr>
+                <tr style="height: 162px;background-color: #F8F7F7 !important;">
+                    <td colspan="3" style="vertical-align: top;">
+                        <table class ="table-full-width">
+                            <tr>
+                                <td id="td-label-user-name">
+                                    <span id="wrapper-label-user-name" style="width: 340px;
+                                                height: 42px;
+                                                border-radius: 54px;
+                                                border: 2px solid #F47920;
+                                                background: linear-gradient(180deg, #FFF 0%, #F7F6F6 100%);
+                                                backdrop-filter: blur(2px);
+                                                display: inline-block;
+                                                margin: 30px 0px 0px 42px;">
+                                       <p id="label-user-name" style="font-style: normal;
+                                       font-weight: 700;
+                                       font-size: 16px;
+                                       line-height: 18.4px;
+                                       text-align: center;
+                                       color: #211F1E;
+                                       margin: 12px 36px;
+                                       display: inline-block;">Hola, {{var:username:""}}</p> 
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="td-wrapper-img-title" style="width: 80px;
+                                        overflow: hidden;
+                                        display: inline-block;">
+                                    <span id="wrapper-img-title"style="margin: 24px 0px 24px 32px;
+                                             height: 48px;
+                                             width: 48px;
+                                             display: inline-block;">
+                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/IconXroja.png" alt="logo" style="height: 48px;width: 48px;">
+                                    </span>
+                                </td>
+                                <td id="td-wrapper-label-title" style="height: 48px;
+                                           width: 338px;
+                                           display: inline-block;">
+                                    <span id="wrapper-label-title" style="margin: 14px 0px 0px 30px;
+                                                 height: 48px;
+                                                 display:inline-block;">
+                                        <p id="label-title" style="font-size: 22px;
+                                                  font-weight: 700;
+                                                  line-height: 25.3px;
+                                                  margin: 0px;
+                                                  color: #211F1E !important">
+                                  Tu pago ha sido rechazado
+                                      </p>
+                                    </span>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="table-module">
+                <tr>
+                    <td style="height: 30px;"></td>
+                </tr>
+                <tr>
+                    <td style="width: 457px;">
+                        <span id ="wrapper-body-text">
+                            <p class="elemnts-body" style="font-style: normal;
+                                      font-weight: 700;
+                                      font-size: 20px;
+                                      line-height: 23px;
+                                      margin: 0px 0px 0px 129px;"> Detalle de la transacción </p>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 30px;"></td>
+                </tr>
+            </table>
+
+            <table class="table-module">
+                <tbody>
+                <tr>
+                    <td class="td-content-body-card" style="padding-left:129px;">
+                        <span class="wrapper-table-body"  style="width: 464px;
+                                    display: inline-block;
+                                    border: 1px solid #E3E3E3;
+                                    background: #FFF !important;
+                                    border-radius: 12px;
+                                    height: 170px;">
+                            <table class ="wrapper-table-body">
+                                <tbody>
+                                    <tr>
+                                        <td class="td-table-body" style="width: 100px;">
+                                                <p class="p-body" style="color: #211F1E;
+                                                font-size: 16px;
+                                                font-weight: 400;
+                                                font-style: normal;
+                                                line-height: normal;
+                                                text-align: left;
+                                                vertical-align: top;
+                                                display: inline-block;
+                                                margin: 30px 0px 24px 30px;">
+                                                    Referencia:
+                                                </p>
+                                        </td>
+                                        <td style="width: 10px;"></td>
+                                        <td  style="width: 190px;">
+                                                <p class="p-body" style="font-size: 16px;
+                                                font-weight: 700;
+                                                font-style: normal;
+                                                line-height: normal;
+                                                color: #211F1E;
+                                                margin: 30px 30px 24px 0px;
+                                                text-align: right;">
+                                                           {{var:reference:""}}  
+                                                </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-table-body" style="width: 100px;">
+                                            <p class="p-body-second" style="color: #211F1E;
+                                            font-size: 16px;
+                                            font-weight: 400;
+                                            font-style: normal;
+                                            line-height: normal;
+                                            text-align: left;
+                                            vertical-align: top;
+                                            display: inline-block;
+                                            margin: 0px 0px 24px 30px;">Fecha:
+                                            </p>
+                                        </td>
+                                        <td style="width: 161px;"></td>
+                                        <td  style="width: 150px;">
+                                            <p class="p-body-second" style="font-size: 16px;
+                                            font-weight: 700;
+                                            font-style: normal;
+                                            line-height: normal;
+                                            text-align: right;
+                                            color: #211F1E;
+                                            margin: 0px 30px 24px 0px;">
+                                      {{var:date:""}}
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-table-body" style="width: 100px;">
+                                            <p class="p-body-second" style="color: #211F1E;
+                                            font-size: 16px;
+                                            font-weight: 400;
+                                            font-style: normal;
+                                            line-height: normal;
+                                            text-align: left;
+                                            margin: 0px 0px 24px 30px;">Monto:
+                                            </p>
+                                        </td>
+                                        <td style="width: 161px;"></td>
+                                        <td style="width: 150px;">
+                                            <p class="p-body-second" style="font-size: 16px;
+                                            font-weight: 700;
+                                            font-style: normal;
+                                            line-height: normal;
+                                            text-align: right;
+                                            color: #211F1E;
+                                            margin: 0px 30px 24px 0px;">
+                                          {{var:amount:""}}
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="height: 24px;"></td>
+                </tr>
+                </tbody>
+            </table>
+
+
+
+            <table class="table-module">
+                <tr style="background-color: #FFFFFF !important;
+                           border-top: 1px solid #F54040;">
+                    <td class="td-footer">
+                        <img id="img-footer" style="margin: 36px 30px 45px 42px; height: 36px;width: 37px;" 
+                             src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/IconCorreoRojo.png" alt="">
+                    </td>
+                    <td>
+                        <span id="wrapper-footer" style="text-align: center;
+                                     font-size: 14px;
+                                     font-style: normal;
+                                     font-weight: 400;
+                                     line-height: normal;
+                                     color: #211F1E !important;
+                                     width: 560px;
+                                     height: 48px;
+                                     display: inline-block;
+                                     margin: 36px 42px 42px 0px;">
+                            <p class="p-footer">Este correo electrónico se envió desde una dirección para notificaciones, no puede</p>
+                            <p class="p-footer">aceptar correos electrónicos entrantes. Por favor, no responda a este mensaje. Si tiene</p>
+                            <p class="p-footer">alguna pregunta o inquietud, contáctenos en mailto: 
+                                <a style="color: #E0640B !important;text-decoration-line: underline;">servicioposventa@placetopay.ec</a>
+                            </p>
+                        </span>
+                    </td>
+                </tr>
+            </table>
+        </tr>
+    </table>
+</body>
+</html>
+
