@@ -4,10 +4,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TransferenciaCashback</title>
+    <title>TransferenciaMillas</title>
     <!--[if mso]> <noscript> <xml> <o:OfficeDocumentSettings> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml> </noscript> <![endif]-->
     <style>
-        @media only screen and (max-width: 480px) {
+        
+        @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
             body {
                 width: 100% !important;
                 margin: 0 auto !important;
@@ -38,6 +39,8 @@
 
             #label-title {
                 font-size: 18px !important;
+                width: 280px !important;
+                margin: 10px 0px !important;
             }
 
             #wrapper-img-title{
@@ -53,14 +56,14 @@
             }
 
             #td-img-footer{
-                width: 30% !important;
+                width: 20% !important;
             }
 
             #td-label-footer {
-                width: 66% !important;
+                width: 70% !important;
             }
             #img-footer {
-                margin: 24px 0px 0px 24px !important;
+                margin: 15px 0px 0px 24px !important;
                 width: 44px !important;
                 height: 44px !important;
             }
@@ -70,7 +73,7 @@
             }
 
             #p-text-footer-sub-title {
-                margin: 0px 0px 0px 12px !important;
+                margin: 0px 0px 18px 12px !important;
                 width: 100% !important;
             }
 
@@ -110,9 +113,9 @@
             }
 
             .elemnts-body {
-                    margin: 0px 24px 0px 0px !important;
-                    padding-left: 80px !important;
-                    font-size: 16px !important;
+                padding-left: 24px !important;
+                font-size: 16px !important;
+                padding-right: 24px !important;
             }
             .p-body-title {
                 font-size: 16px !important;
@@ -145,6 +148,9 @@
             .btn-movil {
                 padding-left: 0px !important;
             }
+            .img-yt{
+                margin-right: 0px !important;
+               }
         }
 
         body {
@@ -165,6 +171,11 @@
             border-spacing:0;
             background: #FFFF !important;
         }
+        .img-buttom {
+            margin: 0px 0px 31px 29px !important;
+            width: 330px !important;
+            height: 55px !important;
+        }
 
     </style>
 
@@ -177,60 +188,54 @@
     <tr>
         <table class="table-module">
             <tr style="height: 72px;border-bottom: 2px solid #F47920 !important;">
-                <td style="width: 138px;">
-                    <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/DiscoverLogo.png" alt="logo" style="margin: 0px 0px 0px 32px;width: 112px;height: 25px">
+                <td class="title-section-light" style="width: 138px;">
+                    <img class="logo" src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverHeaderDesktop/logo_negro.png" alt="logo" style="margin: 0px 0px 0px 32px;width: 112px;height: 25px">
                 </td>
-                <td></td>
-                <td style="width: 138px;">
-                    <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/IconTarjeta.png" alt="campana" style="width: 36px;height: 36px;    margin: 0px 36px 0px 76px;">
+                <td class="title-section-light"></td>
+                <td class="title-section-light" style="width: 138px;">
+                    <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverHeaderDesktop/card.png" alt="campana" style="width: 36px;height: 36px;    margin: 0px 36px 0px 76px;">
                 </td>
             </tr>
-            <tr style="height: 162px;background-color: #F8F7F7 !important;">
-                <td colspan="3" style="vertical-align: top;">
-                    <table class="table-full-width">
-                        <tr>
-                            <td id="td-label-user-name">
-                                    <span id="wrapper-label-user-name" style="width: 340px;
-                                                height: 42px;
-                                                border-radius: 54px;
-                                                border: 2px solid #F47920;
-                                                background: linear-gradient(180deg, #FFF 0%, #F7F6F6 100%);
-                                                backdrop-filter: blur(2px);
-                                                display: inline-block;
-                                                margin: 30px 0px 0px 42px;">
-                                       <p id="label-user-name" style="font-style: normal;
-                                       font-weight: 700;
-                                       font-size: 16px;
-                                       line-height: 18.4px;
-                                       text-align: center;
-                                       color: #211F1E;
-                                       margin: 12px 36px;
-                                       display: inline-block;">Hola, {{var:originusername:""}}</p> 
-                                    </span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td id="td-wrapper-img-title" style="width: 80px;
+            <tr>
+                <td class="title-section-light" style="height:54px" colspan="3">
+                    <span  style="color:#211F1E;
+                    font-weight: 400;
+                    margin: 18px 36px;
+                    font-size: 16px;
+                    line-height: normal;
+                    font-style:normal">Hola, <strong style="color:#211F1E;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: normal;
+                    font-style:normal">{{var:username:""}}</strong></span>
+                </td>
+            </tr>
+            <tr class="title-section"  style="height: 96px;background-color: #F8F7F7 !important;">
+                <td class="title-section" colspan="3" style="vertical-align: top;">
+                    <table class="table-full-width title-section">
+                        
+                        <tr class="title-section" >
+                            <td class="title-section" id="td-wrapper-img-title" style="width: 80px;
                                         overflow: hidden;
                                         display: inline-block;">
-                                    <span id="wrapper-img-title"style="margin: 24px 0px 24px 32px;
+                                    <span class="title-section" id="wrapper-img-title"style="margin: 24px 0px 24px 32px;
                                              height: 48px;
                                              width: 48px;
                                              display: inline-block;">
-                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/IconDineroVerde.png" alt="logo" style="height: 48px;width: 48px;">
+                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverHeaderDesktop/cashback.png" alt="logo" style="height: 48px;width: 48px;">
                                     </span>
                             </td>
-                            <td id="td-wrapper-label-title" style="height: 48px;
+                            <td class="title-section" id="td-wrapper-label-title" style="height: 48px;
                                            width: 430px;
                                            display: inline-block;">
-                                    <span id="wrapper-label-title" style="margin: 14px 0px 0px 30px;
+                                    <span class="title-section"  id="wrapper-label-title" style="margin: 14px 0px 18px 30px;
                                                  height: 48px;  
                                                  display:inline-block;">
-                                        <p id="label-title" style="font-size: 20px;
+                                        <p class="title-section" id="label-title" style="font-size: 20px;
                                                   font-weight: 700;
                                                   line-height: 25.3px;
                                                   margin: 0px;
-                                                  color: #211F1E !important">Transferencia exitosa de Cashback</p>
+                                                  color: #211F1E">Tu CASHBACK fue transferido</p>
                                     </span>
                             </td>
                         </tr>
@@ -244,30 +249,26 @@
                 <td class="td-space-header" style="height:60px;"></td>
             </tr>
             <tr>
-                <td class="elemnts-body" style="padding-left:120px;">
+                <td class="elemnts-body" style="padding-left: 134px;padding-right: 134px;">
                     <p class ="p-body-title" style="font-style: normal;
                                                                     font-weight: 700;
                                                                     font-size: 20px;
                                                                     line-height: 21px;
-                                                                    color: #211F1E !important;">
-                        Realizaste una transferencia de Cashback
+                                                                    color: #211F1E;">
+                                                                    CASHBACK debitado de tu cuenta:
                     </p>
                 </td>
             </tr>
             <tr>
-                <td style="height: 18px;"></td>
-            </tr>
-            <tr>
-                <td class = "elemnts-body" style="padding-left: 120px;">
-                        <span class="container-body-table" style="width: 432px;
-                                    height: 54px;
+                <td class = "elemnts-body" style="padding-left: 134px;padding-right: 134px;">
+                        <span class="container-body-table span-container" style="width: 432px;
                                     display: inline-block;
-                                    border: 1px solid #E3E3E3 !important;
+                                    border: 1px solid #53BC9D !important;
                                     border-radius: 10px;
-                                    height: 54px;
+                                    height: 70px;
                                     margin: 0px 0px 24px;
-                                    background-color: #F8F7F7 !important;">
-                         <table class="container-body-table" style="width: 432px; height: 54px;">
+                                    background-color: #FFF;">
+                         <table class="container-body-table table-container" style="width: 432px; height: 54px;">
                             <tr>
                                 <td style="width: 210px;">
                                     <p class="p-body-subtitle" style="color: #211F1E;
@@ -275,7 +276,7 @@
                                             display: inline-block;
                                             font-size: 16px;
                                             font-weight: bold;    
-                                            margin: 18px 0px 18px 30px;
+                                            margin: 24px 0px 24px 30px;
                                             line-height: 22px;">
                                         Cashback transferido:
                                     </p>
@@ -284,7 +285,7 @@
                                 <td>
                                     <p class="p-body-subtitle" style="color: #211F1E;
                                             font-size: 16px;
-                                            margin: 18px 30px 18px 0px;
+                                            margin: 24px 30px 24px 0px;
                                             font-weight: normal;
                                             vertical-align: top;
                                             display: inline-block;
@@ -301,13 +302,14 @@
                 <td style="width:18px;"></td>
             </tr>
             <tr>
-                <td class="elemnts-body " style="padding-left:120px;">
-                    <p class="p-body-title" style=" color: #211F1E !important;
+                <td class="elemnts-body " style="padding-left: 134px;padding-right: 134px;">
+                    <p class="p-body-title" style=" color: #211F1E;
                                             font-size: 20px;
                                             font-weight: 400;
                                             line-height: 18px;
                                             text-align: left;
-                                            vertical-align: top;
+                                            vertical-align: top;    
+                                            margin: 0px 0px 36px;
                                             display: inline-block;">
                         Para: {{var:destinationusername:""}}
                     </p>
@@ -320,7 +322,7 @@
                 <td class="btn-movil" style="padding-left:80px;";>
                     <a href="https://discover-ec.developppm.com">
 
-                                <img class="elemnts-body" src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/BodyDiscover/btncashback.png" alt=""
+                                <img class="img-buttom" src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/BodyDiscover/btncashback.png" alt=""
 
                                      style="margin: 0px 0px 65px 129px;width: 242px; height: 48px; cursor: pointer;"">
 
@@ -335,99 +337,96 @@
                     <table class="table-full-width">
                         <tr>
                             <td id="td-img-footer" style="width: 80px;
-                                                                overflow: hidden;
-                                                                display: inline-block;">
-                                <a href="https://api.whatsapp.com/send/?phone=593963040040&text&type=phone_number&app_absent=0">
-                                    <img id="img-footer" src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/FooterDiscover/IconWhatsapp.png" alt="logo"
-                                         style="margin: 0px 0px 0px 32px;height: 44px;width: 44px;">
-                                </a>
+                            overflow: hidden;
+                            display: inline-block;">
+                                <img id="img-footer" src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverFooterDesktop/call.png" alt="logo" 
+                                     style="margin: 15px 0px 0px 32px;height: 48px;width: 48px;">
                             </td>
                             <td id="td-label-footer" style="display: inline-block;">
-                                    <span>
-                                        <p id="p-text-footer-title" style="margin: 0px 0px 0px 12px;
-                                                font-size: 16px;
-                                                font-weight: 700;
-                                                line-height: normal;
-                                                font-style: normal;
-                                                color: #211F1E !important;">¿Necesitas ayuda?
+                                <p id="p-text-footer-title" style="margin: 40px 0px 0px 12px;
+                                          font-size: 16px;
+                                          font-weight: 700;
+                                          line-height: normal;
+                                          font-style: normal;
+                                          color: #211F1E;">¿Necesitas ayuda?</p>
+                                        <p id="p-text-footer-sub-title" style="margin: 0px 0px 30px 12px;
+                                          font-size: 14px;
+                                          font-weight: 400;
+                                          line-height: normal;
+                                          font-style: normal;
+                                          color: #211F1E;">Comunícate al 
+                                            <strong style="font-weight: 700;color: #F47920 !important;">
+                                             1800-CASHBACK (227 422)
+                                            </strong>
                                         </p>
-                                        <p id="p-text-footer-sub-title" style="margin: 0px 0px 0px 12px;
-                                                font-size: 14px;
-                                                font-weight: 400;
-                                                line-height: normal;
-                                                font-style: normal;
-                                                color: #211F1E !important;">Comunícate con nosotros
-                                        </p>
-                                    </span>
                             </td>
-                        </tr>
-                        <tr>
-                            <td style="height: 30px;"></td>
                         </tr>
                     </table>
                 </td>
             </tr>
-            <tr style="background-color: #F8F7F7 !important;">
-                <td id="td-label-social-network" style="width: 243px;">
-                        <span id="wrapper-label-social-network" style="vertical-align:bottom;
+            <tr class="title-section"  style="background-color: #F8F7F7 !important;">
+                <td class="title-section"  id="td-label-social-network" style="width: 243px;">
+                        <span class="title-section"  id="wrapper-label-social-network" style="vertical-align:bottom;
                                     height: 30px;
                                     display: inline-block;
                                     margin: 18px 0px 18px 42px;">
-                            <p id="label-social-network" style="text-align: left;
+                            <p class="title-section" id="label-social-network" style="text-align: left;
                             font-size: 11px;
                             font-style: normal;
                             font-weight: 400;
                             line-height: normal;
-                            color: #211F1E  !important;">
+                            color: #211F1E  ;">
                                 TU DINERO DE VUELTA, <strong style="font-weight: 700;">SIEMPRE.</strong>
                             </p>
                         </span>
                 </td>
-                <td id="td-center-body"></td>
-                <td id="td-social-network" style="width: 194px;">
-                        <span id="wrapper-social-network" style="vertical-align:bottom;
-                                     height: 30px;
-                                     display: inline-block;
-                                     margin: 18px 0px 18px 0px;">
-                            <a style="border:0px solid #F47920;border-radius:36px" href="https://twitter.com/discoverecu?s=21&t=RhDLOB1Gi5VRakyuwoiC8g">
-                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/FooterDiscover/Twitter.png"
-                                     style="margin-right: 14px;
-                                            height: 30px;
-                                            width: 30px;" alt="twitter">
-                            </a>
-                        
-                            <a style="border:0px solid #F47920;border-radius:36px" href="https://www.facebook.com/DiscoverEC?mibextid=LQQJ4d">
-                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/FooterDiscover/Facebook.png"
-                                     style="margin-right: 14px;
-                                            height: 30px;
-                                            width: 30px;" alt="facebook">
-                            </a>
+                <td class="title-section"  id="td-center-body"></td>
+                <td class="title-section"  id="td-social-network" style="width: 194px;">
+                    <span id="wrapper-social-network" style="vertical-align:bottom;
+                    height: 30px;
+                    display: inline-block;
+                    margin: 18px 0px 18px 0px;">
+                        <a style="border:0px solid #F47920;border-radius:36px" href="https://twitter.com/discoverecu?s=21&t=RhDLOB1Gi5VRakyuwoiC8g">
+                            <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverFooterDesktop/Tw.png" 
+                                    style="margin-right: 14px;
+                                        height: 30px;
+                                        width: 30px;" alt="twitter">
+                        </a>
                     
-                            <a style="border:0px solid #F47920;border-radius:36px" href="https://instagram.com/discover_ec?igshid=NTc4MTIwNjQ2YQ==">
-                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/FooterDiscover/Instagram.png"
-                                     style="margin-right: 14px;
-                                            height: 30px;
-                                            width: 30px;" alt="instagram">
-                            </a>
-                        
-                            <a style="border:0px solid #F47920;border-radius:36px" href="https://youtube.com/@DiscoverEcuador">
-                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/FooterDiscover/Youtube.png"
-                                     style="margin-right: 0px;
-                                            height: 30px;
-                                            width: 30px;" alt="youtube">
-                            </a>
-                        </span>
+                        <a style="border:0px solid #F47920;border-radius:36px" href="https://www.facebook.com/DiscoverEC?mibextid=LQQJ4d">
+                            <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverFooterDesktop/Fb.png" 
+                                    style="margin-right: 14px;
+                                        height: 30px;
+                                        width: 30px;" alt="facebook">
+                        </a>
+                
+                        <a style="border:0px solid #F47920;border-radius:36px" href="https://instagram.com/discover_ec?igshid=NTc4MTIwNjQ2YQ==">
+                            <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverFooterDesktop/Ista.png" 
+                                    style="margin-right: 14px;
+                                        height: 30px;
+                                        width: 30px;" alt="instagram">
+                        </a>
+                    
+                        <a style="border:0px solid #F47920;border-radius:36px" href="https://youtube.com/@DiscoverEcuador">
+                            <img class="img-yt" src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverFooterDesktop/Yt.png" 
+                                    style="margin-right: 14px;
+                                        height: 30px;
+                                        width: 30px;" alt="youtube">
+                        </a>
+                </span>
                 </td>
             </tr>
-            <tr style="background-color: #F47920 !important;">
-                <td colspan="3" style="vertical-align: top;">
-                    <p style="text-align: center;
-                                  font-size: 11px;
-                                  font-style: normal;
-                                  font-weight: 400;
-                                  line-height: normal;
-                                  color: #FFF !important;">
-                     © 2023 Diners Club. Todos los derechos reservados.
+            <tr style="background-color: #000 !important;">
+                <td class="title-section-light" colspan="3" style="vertical-align: top;height:50px">
+                    <p class="title-section-light" style="text-align: center;
+                              font-size: 11px;
+                              font-style: normal;
+                              font-weight: 400;
+                              line-height: normal;
+                              margin: 18px 30px;
+                              color: #FFF !important;
+                              letter-spacing: 0.02px;">
+                              © Diners Club International ® Ecuador. Derechos reservados.
                     </p>
                 </td>
             </tr>

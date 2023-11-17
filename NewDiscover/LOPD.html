@@ -4,10 +4,42 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LeyProteccionDatos</title>
+
+    <title>LOPD</title>
       <!--[if mso]> <noscript> <xml> <o:OfficeDocumentSettings> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml> </noscript> <![endif]-->
     <style>
-        @media only screen and (max-width: 480px) {
+
+        body {
+            background: white;
+            color: white;
+
+            font-family: Helvetica;
+            width: 700px;
+            margin: 0 auto;
+            padding: 0px;
+        }
+        a {
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .table-module {
+            width:700px;
+            border:0;
+            border-collapse:collapse;
+            border-spacing:0;
+            background: #FFFF !important;
+        }
+
+        .is-movil {
+            display: none;
+        }
+
+        .is-pc {
+            display: inline-block;
+        }
+
+        @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
             body {
                 width: 100% !important;
                 margin: 0 auto !important;
@@ -38,6 +70,7 @@
 
            #label-title {
                 font-size: 20px !important;
+                margin: 10px 0px !important;
            }
 
            #wrapper-img-title{
@@ -48,7 +81,7 @@
                 width: 25% !important;
            }
            #td-wrapper-label-title {
-                width: 65% !important;
+                width: 71% !important;
            }
 
            #td-img-footer{
@@ -102,7 +135,7 @@
            #wrapper-social-network {
                 width: 53% !important;
                 margin: 0px 91px 18px !important;
-           }
+            }
 
            #text-body {
                 margin: 30px 24px 30px 24px !important;
@@ -135,35 +168,12 @@
             .is-pc {
                 display: none !important;
             }
+            .img-yt{
+                margin-right: 0px !important;
+               }
         }
 
-
-        body {
-            font-family: Helvetica;
-            width: 700px;
-            margin: 0 auto;
-            padding: 0px;
-        }
-        a {
-            text-decoration: none;
-            cursor: pointer;
-            display: inline-block;
-        }
-        .table-module {
-            width:700px;
-            border:0;
-            border-collapse:collapse;
-            border-spacing:0;
-            background: #FFFF !important;
-        }
-
-        .is-movil {
-            display: none;
-        }
-
-        .is-pc {
-            display: inline-block;
-        }
+        
 
       </style>
       
@@ -179,37 +189,30 @@
             <table class="table-module">
                 <tr style="height: 72px;border-bottom: 2px solid #F47920 !important;">
                     <td style="width: 138px;">
-                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/DiscoverLogo.png" alt="logo" style="margin: 0px 0px 0px 32px;width: 112px;height: 25px;">
+                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverHeaderDesktop/logo_negro.png" alt="logo" style="margin: 0px 0px 0px 32px;width: 112px;height: 25px">
                     </td>
                     <td></td>
                     <td style="width: 138px;">
-                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/Campana.png" alt="campana" style="width: 36px;height: 36px;    margin: 0px 36px 0px 76px;">
+                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverHeaderDesktop/alert.png" alt="campana" style="width: 36px;height: 36px;    margin: 0px 36px 0px 76px;">
                     </td>
                 </tr>
-                <tr style="height: 162px;background-color: #F8F7F7 !important;">
+                <tr>
+                    <td style="height:54px" colspan="3">
+                        <span  style="color:#211F1E;
+                        font-weight: 400;
+                        margin: 18px 36px;
+                        font-size: 16px;
+                        line-height: normal;
+                        font-style:normal">Hola, <strong style="color:#211F1E;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: normal;
+                        font-style:normal">{{var:username:""}}</strong></span>
+                    </td>
+                </tr>
+                <tr style="height: 96px;background-color: #F8F7F7 !important;">
                     <td colspan="3" style="vertical-align: top;">
                         <table class="table-full-width">
-                            <tr>
-                                <td id="td-label-user-name">
-                                    <span id="wrapper-label-user-name" style="width: 340px;
-                                                height: 42px;
-                                                border-radius: 54px;
-                                                border: 2px solid #F47920;
-                                                background: linear-gradient(180deg, #FFF 0%, #F7F6F6 100%);
-                                                backdrop-filter: blur(2px);
-                                                display: inline-block;
-                                                margin: 30px 0px 0px 42px;">
-                                       <p id="label-user-name" style="font-style: normal;
-                                       font-weight: 700;
-                                       font-size: 16px;
-                                       line-height: 18.4px;
-                                       text-align: center;
-                                       color: #211F1E;
-                                       margin: 12px 36px;
-                                       display: inline-block;">Hola, {{var:username:""}}</p> 
-                                    </span>
-                                </td>
-                            </tr>
                             <tr>
                                 <td id="td-wrapper-img-title" style="width: 80px;
                                 overflow: hidden;
@@ -218,7 +221,7 @@
                                                 height: 48px;
                                                 width: 48px;
                                                 display: inline-block;">
-                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/BodyDiscover/IconCandado.png" alt="logo" style="height: 48px;width: 48px;">
+                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverBodyDesktop/lock.png" alt="logo" style="height: 48px;width: 48px;">
                                     </span>
                                 </td>
                                 <td id="td-wrapper-label-title" style="height: 48px;
@@ -231,7 +234,7 @@
                                                   font-weight: 700;
                                                   line-height: normal;
                                                   margin: 0px;
-                                                  color: #211F1E !important">Tu seguridad es nuestra prioridad </p>
+                                                  color: #211F1E !important">¡Tus datos están seguros!</p>
                                     </span>
                                 </td>
                             </tr>
@@ -242,7 +245,7 @@
 
             <table class="table-module">
                 <tr>
-                    <td style="height: 48px;"></td>
+                    <td style="height: 42px;"></td>
                 </tr>
                 <tr>
                     <td style="width: 457px;">
@@ -279,13 +282,64 @@
                         </span>
                     </td>
                 </tr>
-                <tr class="is-pc" style="background: #F8F7F7 !important; width: 700px; height: 137px;">
+                <tr class="is-pc" style="background: #F8F7F7; width: 700px; height: 137px;">
                     <td style="border-radius: 12px;
                                border: 1px solid #F47920 !important;
                                background: #FFF !important;
-                               width: 125px;
-                               height: 101px;
-                               margin: 18px 12px 18px 60px;
+                               width: 280px;
+                               height: 78px;
+                               margin: 18px 12px 0px 60px;
+                               display: inline-block;">
+                        <a>
+                            <table style="width: 125px; height: 101px;">
+                                <tr>
+                                    <td style="height: 50px;display: inline-block;">
+                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverBodyDesktop/sms.png" alt="" 
+                                        style="width: 31.40px;height: 32.18px;margin: 18px 12px 18px 24px">
+                                    </td>
+                                    <td>
+                                       <table style="width: 40px; height: 30px;">
+                                        <tr>
+                                            <td>
+                                                <p style="color:  #211F1E !important;
+                                                font-family: Helvetica;
+                                                font-size: 16px;
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                line-height: normal;
+                                                margin: 0px 13px 8px 13px;">
+                                                    SMS:
+                                                </p>
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p style="color:  #211F1E !important;
+                                                font-family: Helvetica;
+                                                font-size: 16px;
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                line-height: normal;
+                                                width: 100px;
+                                                margin: 0px 13px 8px 13px;">
+                                                Por definir
+                                                </p>
+                                            </td>
+                                        </tr>
+                                       </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </a>
+                    </td>
+
+                    <td style="border-radius: 12px;
+                               border: 1px solid #F47920 !important;
+                               background: #FFF !important;
+                               width: 280px;
+                               height: 78px;
+                               margin: 18px 12px 0px 0px;
                                display: inline-block;">
                         <a href="tel:1800347268">
                             <table style="width: 125px; height: 101px;">
@@ -294,45 +348,63 @@
                                         <table style="width: 85px;height: 89px;">
                                             <tr>
                                                 <td style="height: 50px;display: inline-block;" >
-                                                    <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/BodyDiscover/IconAsistente.png" alt="" style="width: 36px;height: 36px;
+                                                    <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverBodyDesktop/sms.png" alt="" style="width: 36px;height: 36px;
                                                                                                            margin: 8px 0px 8px 8px;">
                                                 </td>
-                                            </tr>
-                                            <tr>
-                                                <td style="width: 115px; height: 36px; display: inline-block;">
-                                                    <p style="color:  #211F1E !important;
-                                                            font-family: Helvetica;
-                                                            font-size: 16px;
-                                                            font-style: normal;
-                                                            font-weight: 700;
-                                                            line-height: normal;
-                                                            margin: 0px 13px 8px 13px;">
-                                                        Call Center
-                                                    </p>
-                                                </td>
-                                            </tr>
+                                                <td>
+                                                    <table style="width: 40px; height: 30px;">
+                                                     <tr>
+                                                         <td>
+                                                             <p style="color:  #211F1E !important;
+                                                             font-family: Helvetica;
+                                                             font-size: 16px;
+                                                             font-style: normal;
+                                                             font-weight: 700;
+                                                             line-height: normal;
+                                                             margin: 0px 13px 8px 13px;">
+                                                                 SMS:
+                                                             </p>
+                                                             
+                                                         </td>
+                                                     </tr>
+                                                     <tr>
+                                                         <td>
+                                                             <p style="color:  #211F1E !important;
+                                                             font-family: Helvetica;
+                                                             font-size: 16px;
+                                                             font-style: normal;
+                                                             font-weight: 400;
+                                                             line-height: normal;
+                                                             width: 208px;
+                                                             margin: 0px 13px 8px 13px;">
+                                                             1800-CASHBACK (227 422)
+                                                             </p>
+                                                         </td>
+                                                     </tr>
+                                                    </table>
+                                                 </td>
                                         </table>
                                     </td>
                                 </tr>
                             </table>
                         </a>
                     </td>
-                    
+                </tr>
+                <tr class="is-pc" style="background: #F8F7F7 !important; width: 700px; height: 101px;">
                     <td style="border-radius: 12px;
                                border: 1px solid #F47920 !important;
                                background: #FFF !important;
-                               width: 125px;
-                               height: 101px;
-                               margin: 18px 12px 18px 0px;
+                               width: 580px;
+                               height: 78px;
+                               margin: 0px 12px 18px 60px;
                                display: inline-block;">
                         <a>
                             <table style="width: 125px; height: 101px;">
                                 <tr>
                                     <td style="height: 50px;display: inline-block;">
-                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/BodyDiscover/IconEmail.png" alt="" style="width: 36px;height: 36px;margin:13px 0px 13px 9px;">
+                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverBodyDesktop/mail.png" alt="" style="width: 36px;height: 36px;margin:13px 0px 13px 9px;">
                                     </td>
-                                </tr>
-                                <tr>
+                                
                                     <td>
                                         <p style="color:  #211F1E !important;
                                         font-family: Helvetica;
@@ -340,69 +412,22 @@
                                         font-style: normal;
                                         font-weight: 700;
                                         line-height: normal;
+                                        width: 200px;
                                         margin: 0px 13px 8px 13px;">
                                             Correos
                                             electrónicos
                                         </p>
                                     </td>
-                                </tr>
-                            </table>
-                        </a>
-                    </td>
-                    <td style="border-radius: 12px;
-                               border: 1px solid #F47920 !important;
-                               background: #FFF !important;
-                               width: 125px;
-                               height: 101px;
-                               margin: 18px 12px 18px 0px;
-                               display: inline-block;">
-                        <a href="https://api.whatsapp.com/send/?phone=593963040040&text&type=phone_number&app_absent=0">
-                            <table style="width: 125px; height: 101px;">
-                                <tr>
-                                    <td style="height: 50px;display: inline-block;">
-                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/BodyDiscover/IconWhatsapp.png" alt="" style="width: 36px;height: 36px;margin: 13px 0px 13px 8px">
-                                    </td>
-                                </tr>
-                                <tr>
                                     <td>
                                         <p style="color:  #211F1E !important;
                                         font-family: Helvetica;
                                         font-size: 16px;
                                         font-style: normal;
-                                        font-weight: 700;
+                                        font-weight: 400;
                                         line-height: normal;
+                                        width: 230px;
                                         margin: 0px 13px 8px 13px;">
-                                        WhatsApp
-                                        </p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </a>
-                    </td>
-                    <td style="border-radius: 12px;
-                               border: 1px solid #F47920 !important;
-                               background: #FFF !important;
-                               width: 125px;
-                               height: 101px;
-                               margin: 18px 60px 18px 0px;
-                               display: inline-block;">
-                        <a>
-                            <table style="width: 125px; height: 101px;">
-                                <tr>
-                                    <td style="height: 50px;display: inline-block;">
-                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/BodyDiscover/IconRectangulo.png" alt="" style="width: 36px;height: 36px;margin: 13px 0px 13px 9px">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <p style="color:  #211F1E !important;
-                                        font-family: Helvetica;
-                                        font-size: 16px;
-                                        font-style: normal;
-                                        font-weight: 700;
-                                        line-height: normal;
-                                        margin: 0px 13px 8px 13px;">
-                                            SMS
+                                        no-reply@discovercashback.ec
                                         </p>
                                     </td>
                                 </tr>
@@ -412,19 +437,58 @@
                 </tr>
 
 
-                <tr class="is-movil" style="background: #F8F7F7 !important; width: 100%; height: 400px;">
+                <tr class="is-movil" style="background: #F8F7F7 !important; width: 100%; height: 413px;">
                     <td style="border-radius: 12px;
                                border: 1px solid #F47920 !important;
                                background: #FFF !important;
-                               height: 72px;
-                               width: 80% !important;
-                               margin: 18px 24px;
+                               height: 109px;
+                               width: 87% !important;
+                               margin: 18px 24px 0px;
                                display: inline-block;">
-                        <a href="tel:1800347268">
+                        <a>
                             <table class="table-full-width">
                                 <tr>
                                     <td style="width: 25% !important;">
-                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/BodyDiscover/IconAsistente.png" alt="" style="width: 36px;height: 36px;margin: 13px 12px 13px 24px;">
+                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverBodyDesktop/sms.png" alt="" style="width: 36px;height: 36px;margin: 13px 12px 13px 24px;">
+                                    </td>
+                                    <td style="height: 36px; display: inline-block;width: 205px !important">
+                                        <p style="color:  #211F1E !important;
+                                                font-family: Helvetica;
+                                                font-size: 18px;
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                line-height: normal;
+                                                display: inline-block;
+                                                margin: 20px 0px;">
+                                            SMS 1
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <p style="color: #211F1E; 
+                                        margin: 0px 0px 18px 24px; 
+                                        font-size: 16px;
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                line-height: normal">Por definir</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </a>
+                    </td>
+                    <td style="border-radius: 12px;
+                               border: 1px solid #F47920 !important;
+                               background: #FFF !important;
+                               height: 109px;
+                               width: 87% !important;
+                               margin: 18px 24px;
+                               display: inline-block;">
+                        <a href="tel:1800227422">
+                            <table class="table-full-width">
+                                <tr>
+                                    <td style="width: 25% !important;">
+                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverBodyDesktop/call.png" alt="" style="width: 36px;height: 36px;margin: 13px 12px 13px 24px;">
                                     </td>
                                     <td style="height: 36px; display: inline-block;width: 205px !important">
                                         <p style="color:  #211F1E !important;
@@ -439,6 +503,16 @@
                                         </p>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <p style="color: #211F1E; 
+                                        margin: 0px 0px 18px 24px; 
+                                        font-size: 16px;
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                line-height: normal">1800-CASHBACK (227 422)</p>
+                                    </td>
+                                </tr>
                             </table>
                         </a>
                     </td>
@@ -446,15 +520,15 @@
                     <td style="border-radius: 12px;
                                border: 1px solid #F47920 !important;
                                background: #FFF !important;
-                               height: 72px;
-                               width: 80% !important;
+                               height: 109px;
+                               width: 87% !important;
                                margin: 0px 24px 18px;
                                display: inline-block;">
                         <a>
                             <table class="table-full-width">
                                 <tr>
                                     <td style="width: 25% !important;">
-                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/BodyDiscover/IconEmail.png" alt="" style="width: 36px;height: 36px;margin: 13px 12px 13px 24px;">
+                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverBodyDesktop/mail.png" alt="" style="width: 36px;height: 36px;margin: 13px 12px 13px 24px;">
                                     </td>
                                     <td style="height: 36px; display: inline-block;width: 205px !important">
                                         <p style="color:  #211F1E !important;
@@ -469,67 +543,21 @@
                                         </p>
                                     </td>
                                 </tr>
-                            </table>
-                        </a>
-                    </td>
-                    <td style="border-radius: 12px;
-                               border: 1px solid #F47920 !important;
-                               background: #FFF !important;
-                               height: 72px;
-                               width: 80% !important;
-                               margin: 0px 24px 18px;
-                               display: inline-block;">
-                        <a href="https://api.whatsapp.com/send/?phone=593963040040&text&type=phone_number&app_absent=0">
-                            <table class="table-full-width">
                                 <tr>
-                                    <td style="width: 25% !important;">
-                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/BodyDiscover/IconWhatsapp.png" alt="" style="width: 36px;height: 36px;margin: 13px 12px 13px 24px;">
-                                    </td>
-                                    <td style="height: 36px; display: inline-block;width: 205px!important">
-                                        <p style="color:  #211F1E !important;
-                                                font-family: Helvetica;
-                                                font-size: 18px;
+                                    <td colspan="2">
+                                        <p style="color: #211F1E; 
+                                        margin: 0px 0px 18px 24px; 
+                                        font-size: 16px;
                                                 font-style: normal;
-                                                font-weight: 700;
-                                                line-height: normal;
-                                                display: inline-block;
-                                                margin: 22px 0px;">
-                                                WhatsApp
-                                        </p>
+                                                font-weight: 400;
+                                                line-height: normal">no-reply@discovercashback.ec</p>
                                     </td>
                                 </tr>
                             </table>
                         </a>
                     </td>
-                    <td style="border-radius: 12px;
-                               border: 1px solid #F47920 !important;
-                               background: #FFF !important;
-                               height: 72px;
-                               width: 80% !important;
-                               margin: 0px 24px 18px;
-                               display: inline-block;">
-                        <a>
-                            <table class="table-full-width">
-                                <tr>
-                                    <td style="width: 25% !important;">
-                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/BodyDiscover/IconRectangulo.png" alt="" style="width: 36px;height: 36px;margin: 13px 12px 13px 24px;">
-                                    </td>
-                                    <td style="height: 36px; display: inline-block;width: 205px !important">
-                                        <p style="color:  #211F1E !important;
-                                                font-family: Helvetica;
-                                                font-size: 18px;
-                                                font-style: normal;
-                                                font-weight: 700;
-                                                line-height: normal;
-                                                display: inline-block;
-                                                margin: 20px 0px;">
-                                            SMS
-                                        </p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </a>
-                    </td>
+                    
+                    
                 </tr>
 
                 <tr>
@@ -567,7 +595,14 @@
                             font-size: 18px;
                             color:#211F1E;
                             line-height: normal;
-                            margin: 0px 60px 60px;">consulta nuestro Aviso de Política de Privacidad aquí. 
+                            margin: 0px 60px 60px;">consulta nuestro Aviso de Política de Privacidad 
+                            <strong style="font-size: 18px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;">
+                            <a href="#" style="color:#F47920;
+                            text-decoration-line: underline;">aquí.</a> 
+                            </strong>
                         </p>
                     </td>
                 </tr>
@@ -593,49 +628,50 @@
                     <td id="td-center-body"></td>
                     <td id="td-social-network" style="width: 194px;">
                         <span id="wrapper-social-network" style="vertical-align:bottom;
-                                     height: 30px;
-                                     display: inline-block;
-                                     margin: 18px 0px 18px 0px;">
+                            height: 30px;
+                            display: inline-block;
+                            margin: 18px 0px 18px 0px;">
                             <a style="border:0px solid #F47920;border-radius:36px" href="https://twitter.com/discoverecu?s=21&t=RhDLOB1Gi5VRakyuwoiC8g">
-                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/FooterDiscover/Twitter.png" 
-                                     style="margin-right: 14px;
+                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverFooterDesktop/Tw.png" 
+                                        style="margin-right: 14px;
                                             height: 30px;
                                             width: 30px;" alt="twitter">
                             </a>
                         
                             <a style="border:0px solid #F47920;border-radius:36px" href="https://www.facebook.com/DiscoverEC?mibextid=LQQJ4d">
-                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/FooterDiscover/Facebook.png" 
-                                     style="margin-right: 14px;
+                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverFooterDesktop/Fb.png" 
+                                        style="margin-right: 14px;
                                             height: 30px;
                                             width: 30px;" alt="facebook">
                             </a>
                     
                             <a style="border:0px solid #F47920;border-radius:36px" href="https://instagram.com/discover_ec?igshid=NTc4MTIwNjQ2YQ==">
-                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/FooterDiscover/Instagram.png" 
-                                     style="margin-right: 14px;
+                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverFooterDesktop/Ista.png" 
+                                        style="margin-right: 14px;
                                             height: 30px;
                                             width: 30px;" alt="instagram">
                             </a>
                         
                             <a style="border:0px solid #F47920;border-radius:36px" href="https://youtube.com/@DiscoverEcuador">
-                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/FooterDiscover/Youtube.png" 
-                                     style="margin-right: 0px;
+                                <img class="img-yt" src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverFooterDesktop/Yt.png" 
+                                        style="margin-right: 14px;
                                             height: 30px;
                                             width: 30px;" alt="youtube">
                             </a>
                         </span>
                     </td>
                 </tr>
-                <tr style="background-color: #F47920 !important;">
-                    <td colspan="3" style="vertical-align: top;">
-                        <p style="text-align: center;
+                <tr style="background-color: #000 !important;">
+                    <td colspan="3" style="vertical-align: top;height:50px">
+                        <p class="copyright" style="text-align: center;
                                   font-size: 11px;
                                   font-style: normal;
                                   font-weight: 400;
                                   line-height: normal;
+                                  margin: 18px 30px;
                                   color: #FFF !important;
                                   letter-spacing: 0.02px;">
-                       © 2023 Diners Club. Todos los derechos reservados.
+                                  © Diners Club International ® Ecuador. Derechos reservados.
                         </p>
                     </td>
                 </tr>

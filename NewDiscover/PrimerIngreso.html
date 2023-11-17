@@ -7,7 +7,7 @@
     <title>PrimerIngreso</title>
       <!--[if mso]> <noscript> <xml> <o:OfficeDocumentSettings> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml> </noscript> <![endif]-->
     <style>
-        @media only screen and (max-width: 480px) {
+        @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
             body {
                 width: 100% !important;
                 margin: 0 auto !important;
@@ -101,8 +101,8 @@
 
            #wrapper-social-network {
                 width: 53% !important;
-                margin: 0px 91px 18px !important;
-           }
+                margin: 0px 100px 18px !important;
+            }
 
            #text-body {
                 margin: 30px 24px 30px 24px !important;
@@ -114,17 +114,19 @@
            }
            .td-content-body-card {
                 padding-left: 24px !important;
+                padding-right: 24px !important;
            }
            .td-img-card {
                 width: 20% !important;
            }
            .p-title-card {
                 font-size: 16px !important;
-                width: auto !important;
+                width: 158px !important;
            }
 
            .p-subtitle-card {
             font-size: 14px !important;
+            width: 187px !important;
            }
 
            .img-card {
@@ -132,6 +134,7 @@
            }
            .td-text-card {
                 width: 70% !important;
+                margin: 0px 0px 0px 10px;
            }
 
            .td-wrapper-card {
@@ -140,8 +143,13 @@
            .copyright {
                 margin: 18px 60px !important;
                 text-align: center !important;
-        
            }
+           .space-card-offers {
+                padding-bottom: 0px !important;
+            }
+            .img-yt {
+                margin-right: 0px !important;
+            }
         }
         body {
             font-family: Helvetica;
@@ -175,7 +183,7 @@
             <table class="table-module">
                 <tr style="height: 72px;border-bottom: 2px solid #F47920 !important;">
                     <td style="width: 138px;">
-                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/DiscoverLogo.png" alt="logo" style="margin: 0px 0px 0px 32px;width: 112px;height: 25px">
+                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverHeaderDesktop/logo_negro.png" alt="logo" style="margin: 0px 0px 0px 32px;width: 112px;height: 25px">
                     </td>
                     <td></td>
                     <td style="width: 138px;">
@@ -356,7 +364,7 @@
                             </td>
                         </tr>
                         <tr>          
-                            <td class="td-content-body-card" style="padding-bottom: 24px;
+                            <td class="td-content-body-card space-card-offers" style="padding-bottom: 24px;
                                                                     padding-left: 129px;">
                                 <table>
                                     <tr>
@@ -415,7 +423,7 @@
             <table class="table-module">
 
                 <td colspan="3" style="vertical-align: top;">
-                    <table>
+                    <table class="table-full-width">
                         <tr>
                             <td id="td-img-footer" style="width: 80px;
                             overflow: hidden;
@@ -488,7 +496,7 @@
                             </a>
                         
                             <a style="border:0px solid #F47920;border-radius:36px" href="https://youtube.com/@DiscoverEcuador">
-                                <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverFooterDesktop/Yt.png" 
+                                <img class="img-yt" src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverFooterDesktop/Yt.png" 
                                      style="margin-right: 14px;
                                             height: 30px;
                                             width: 30px;" alt="youtube">

@@ -7,7 +7,7 @@
     <title>PagoRechazado</title>
       <!--[if mso]> <noscript> <xml> <o:OfficeDocumentSettings> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings> </xml> </noscript> <![endif]-->
     <style>
-        @media only screen and (max-width: 480px) {
+        @media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
             body {
                 width: 100% !important;
                 margin: 0 auto !important;
@@ -29,8 +29,8 @@
            }
 
            #wrapper-label-title {
-                margin: 0px !important;
-                width: 70% !important;
+                margin: 13px 0px 0px !important;
+                width: 100% !important;
            }
 
            #label-title {
@@ -55,7 +55,7 @@
            }
 
            #img-footer {
-                  margin: 5px 0px 74px !important;
+                margin: 5px 0px 74px 24px !important;
            }
 
            #text-body {
@@ -143,37 +143,30 @@
             <table class="table-module">
                 <tr style="height: 72px;border-bottom: 2px solid #F47920 !important;">
                     <td style="width: 138px;">
-                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/DiscoverLogo.png" alt="logo" style="margin: 0px 0px 0px 32px;width: 112px;height: 25px">
+                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverHeaderDesktop/logo_negro.png" alt="logo" style="margin: 0px 0px 0px 32px;width: 112px;height: 25px">
                     </td>
                     <td></td>
                     <td style="width: 138px;">
-                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/IconCampanaError.png" alt="campana" style="width: 36px;height: 36px;    margin: 0px 36px 0px 76px;">
+                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverHeaderDesktop/alert.png" alt="campana" style="width: 36px;height: 36px;    margin: 0px 36px 0px 76px;">
                     </td>
                 </tr>
-                <tr style="height: 162px;background-color: #F8F7F7 !important;">
+                <tr>
+                    <td style="height:54px" colspan="3">
+                        <span  style="color:#211F1E;
+                        font-weight: 400;
+                        margin: 18px 36px;
+                        font-size: 16px;
+                        line-height: normal;
+                        font-style:normal">Hola, <strong style="color:#211F1E;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: normal;
+                        font-style:normal">{{var:username:""}}</strong></span>
+                    </td>
+                </tr>
+                <tr style="height: 96px;background-color: #F8F7F7 !important;">
                     <td colspan="3" style="vertical-align: top;">
                         <table class ="table-full-width">
-                            <tr>
-                                <td id="td-label-user-name">
-                                    <span id="wrapper-label-user-name" style="width: 340px;
-                                                height: 42px;
-                                                border-radius: 54px;
-                                                border: 2px solid #F47920;
-                                                background: linear-gradient(180deg, #FFF 0%, #F7F6F6 100%);
-                                                backdrop-filter: blur(2px);
-                                                display: inline-block;
-                                                margin: 30px 0px 0px 42px;">
-                                       <p id="label-user-name" style="font-style: normal;
-                                       font-weight: 700;
-                                       font-size: 16px;
-                                       line-height: 18.4px;
-                                       text-align: center;
-                                       color: #211F1E;
-                                       margin: 12px 36px;
-                                       display: inline-block;">Hola, {{var:username:""}}</p> 
-                                    </span>
-                                </td>
-                            </tr>
                             <tr>
                                 <td id="td-wrapper-img-title" style="width: 80px;
                                         overflow: hidden;
@@ -182,7 +175,7 @@
                                              height: 48px;
                                              width: 48px;
                                              display: inline-block;">
-                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/IconXroja.png" alt="logo" style="height: 48px;width: 48px;">
+                                        <img src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverHeaderDesktop/error.png" alt="logo" style="height: 48px;width: 48px;">
                                     </span>
                                 </td>
                                 <td id="td-wrapper-label-title" style="height: 48px;
@@ -232,7 +225,7 @@
                     <td class="td-content-body-card" style="padding-left:129px;">
                         <span class="wrapper-table-body"  style="width: 464px;
                                     display: inline-block;
-                                    border: 1px solid #E3E3E3;
+                                    border: 1px solid #53BC9D;
                                     background: #FFF !important;
                                     border-radius: 12px;
                                     height: 170px;">
@@ -330,10 +323,10 @@
 
             <table class="table-module">
                 <tr style="background-color: #FFFFFF !important;
-                           border-top: 1px solid #F54040;">
+                           border-top: 1px solid #F47920;">
                     <td class="td-footer">
-                        <img id="img-footer" style="margin: 36px 30px 45px 42px; height: 36px;width: 37px;" 
-                             src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/Discover/HeaderDiscover/IconCorreoRojo.png" alt="">
+                        <img id="img-footer" style="margin: 36px 30px 45px 42px; height: 31.47px;width: 31.47px;" 
+                             src="https://s3.us-east-2.amazonaws.com/gn-resources.developppm.com/public/maijet/DiscoverV3/DiscoverFooterDesktop/mail.png" alt="">
                     </td>
                     <td>
                         <span id="wrapper-footer" style="text-align: center;
@@ -354,6 +347,21 @@
                         </span>
                     </td>
                 </tr>
+                <tr style="background-color: #000 !important;">
+                    <td colspan="3" style="vertical-align: top;height:50px">
+                        <p class="copyright" style="text-align: center;
+                                  font-size: 11px;
+                                  font-style: normal;
+                                  font-weight: 400;
+                                  line-height: normal;
+                                  margin: 18px 30px;
+                                  color: #FFF !important;
+                                  letter-spacing: 0.02px;">
+                                  © Diners Club International ® Ecuador. Derechos reservados.
+                        </p>
+                    </td>
+                </tr>
+
             </table>
         </tr>
     </table>
